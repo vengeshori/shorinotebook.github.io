@@ -1,0 +1,1137 @@
+body{
+    margin:0;
+    padding:0;
+}
+main{
+    margin:0;
+    padding:0;
+}
+
+.main-container{
+    position:relative;
+    margin:0;
+    padding:0;
+    text-align:center;
+}
+
+header{
+    position:sticky;
+    top:0;
+    height:90px;
+    width:100%;
+    background-color:white;
+    z-index:100;
+    margin:0;
+    padding:0;
+}
+.header-first{
+    height:30px;
+    width:100%;
+    background-color:black;
+    position:relative;
+    margin:0;
+    padding:0;
+    border-bottom:4px solid gray;
+}
+.header-1-button{
+    color:white;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    left:40px;
+    font-size:10px;
+}
+.header-1-button:hover{
+    color:cyan;
+}
+.header-1-logo{
+    position:absolute;
+    right:7%;
+    top:1%;
+    height:30px;
+    transition:5s;
+    transform:translateX(-1150px);
+}
+
+.header-1-muda{
+    height:10px;
+    width:10px;
+    background-color:red;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:2%;
+    z-index:1000;
+}
+
+.header-1-container{
+    display:inline-block;
+    height:60px;
+    position:relative;
+    width:100%;
+}
+.header-1-choice a{
+    font-family:serif;
+    font-size:14px;
+    margin-right:30px;
+    text-decoration:none;
+    color:black;
+    border-left:2px solid;
+    padding-left:3px;
+}
+.header-1-choice a:hover{
+    color:indianred;
+}
+.instagram{
+    display:inline-block;
+    height:60px;
+    position:absolute;
+    right:calc(400px + 5%);
+}
+.instagram-img{
+    width:20px;
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    right:1%;
+}
+.instagrm-button{
+    margin:0;
+    padding:0;
+}
+.instagram-button:hover{
+    opacity:.5;
+}
+
+.box{
+    position:relative;
+}
+/*モーションボタン*/
+button {
+    font-size:16px;
+	color:white;
+	background-color:rgba(0,0,0,.4);
+	border-width:2px solid white;
+	position:relative;
+	margin:1em;
+	display:inline-block;
+	padding:0.5em 1em;
+	transition:all 0.3s ease-in-out;
+	text-align:center;
+	font-family:comfortaa;font-weight:bold
+}
+button:before, button:after {
+	content:'';
+	display:block;
+	position:absolute;
+	border-color:white;
+	box-sizing:border-box;
+	border-style:solid;
+	width:1em;
+	height:1em;
+	transition:all 0.3s ease-in-out
+}
+button:before {
+	top:-6px;
+	left:-6px;
+	border-width:2px 0 0 2px;
+	z-index:5;
+}
+button:after {
+	bottom:-6px;
+	right:-6px;
+	border-width:0 2px 2px 0;
+}
+button:hover:before, button:hover:after {
+	width:calc(100% + 20px);
+  	height:calc(100% + 20px);
+    border-color:#fff;
+}
+button:hover {
+	color:#353535;
+	background-color:#fff;
+	border-color:#fff;
+}
+.panel {
+	text-align:center;
+	margin:auto;
+}
+/*ここまで*/
+.motionbutton:hover{
+    cursor:grab;
+}
+
+.roadbikenotitlebox{
+    height:30vh;
+    width:100%;
+    position:relative;
+}
+.roadbikenotitle{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
+    text-align:center;
+}
+
+
+
+.bike{
+    width:100%;
+    margin:0;
+    margin-bottom:20px;
+}
+.bike-png{
+    width:100%;
+    height:90vh;
+    object-fit:cover;
+}
+
+.bike-container{
+    width:50%;
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform: translateY(-50%) translateX(50%);
+    color:white;
+    text-align:center;
+}
+.bike-title{
+    font-size:35px;
+    font-family:serif;
+    font-weight:400;
+}
+.bike-button{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    background-color:darkblue;
+    width:50%;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+
+.equip-png{
+    width:100%;
+}
+.equip-container{
+    width:50%;
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform: translateY(-50%) translateX(50%);
+    color:white;
+    text-align:center;
+}
+.equip-title{
+    font-size:35px;
+    font-family:serif;
+    margin:0;
+    margin-bottom:10px;
+}
+.equip-button{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    background-color:darkblue;
+    width:70%;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+.raceprac-png{
+    width:100%;
+}
+.raceprac-container{
+    width:50%;
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform: translateY(-50%) translateX(50%);
+    color:white;
+    text-align:center;
+}
+.raceprac-title{
+    font-size:35px;
+    font-family:serif;
+    margin:0;
+    margin-bottom:10px;
+}
+.raceprac-button{
+    display:inline-block;
+    text-decoration: none;
+    color:white;
+    background-color:darkblue;
+    width:70%;
+    padding-top:2px;
+    padding-bottom:2px;
+}
+
+.button:hover{
+    opacity:.5;
+}
+.border{
+    height:0;
+    width:70%;
+    margin:10px auto;
+    margin-top:70px;
+    border-bottom:1px solid;
+}
+.border1{
+    width:90%;
+    margin:10px auto;
+    margin-top:70px;
+    border-bottom:1px solid;
+}
+
+.content-equip{
+    position:relative;
+    margin:0;
+    margin-bottom:20px;
+    padding-bottom:20px;
+    padding:0;
+    width:100%;
+    padding:0;
+    background-color:white;
+}
+.content-equip-title{
+    position:relative;
+    width:100%;
+    height:30vh;
+}
+.titlecontent-1{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:50%;
+    right:50%;
+    transform:translateY(-50%) translateX(50%);
+    text-align:center;
+    width:80%;
+}
+/*grid , grid figure はメディアクエリ内*/
+
+.grid figure img {
+    margin:0;
+    padding:0;
+	display: block;
+    height: 100%;
+	width: 100%;
+	opacity: 0.8;
+}
+
+.grid figure figcaption {
+    height:100%;
+	color: #fff;
+	text-transform: uppercase;
+	font-size:100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+	pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+	width: 100%;
+	height: 100%;
+}
+figure.effect-marley figcaption {
+	text-align: center;
+    width:100%;
+    height:100%;
+}
+
+
+figure.effect-marley h2{
+	position: absolute;
+    left:7%;
+	padding:0;
+    margin:0;
+}
+
+figure.effect-marley h2 {
+	top: 30px;
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(0,20px,0);
+	transform: translate3d(0,20px,0);
+}
+
+figure.effect-marley:hover h2 {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect-marley h2::after {
+	position: absolute;
+	top: 100%;
+	left: -50%;
+	width: 590%;
+	height: 4px;
+	background: white;
+	content: '';
+	-webkit-transform: translate3d(0,40px,0);
+	transform: translate3d(0,40px,0);
+}
+
+figure.effect-marley h2::after,
+figure.effect-marley p {
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect-marley:hover h2::after,
+figure.effect-marley:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+.content-raceprac{
+    margin-top:80px;
+}
+.content-raceprac-title{
+    position:relative;
+    margin:0;
+    padding:0;
+    width:100%;
+    height:40vh;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-image:url(race.png);
+}
+.raceprac-title-text{
+    color:white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    width:90%;
+    transform:translateY(-50%) translateX(-50%);
+    text-align:center;
+    position
+}
+.content-raceprac-main{
+    position:relative;
+    background-color:lightgray;
+    font-family:serif;
+    font-size:60px;
+    height:140vh;
+}
+.content-raceprac-main iframe{
+    margin:0;
+    width:80%;
+    display:block;
+    margin:auto;
+    padding-top:100px;
+}
+footer{
+    height:20vh;
+    background-color:white;
+    width:100%;
+    position:relative;
+}
+.footer-logo{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:7%:;
+}
+.footer-choice{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    display:table;
+}
+
+@media screen and (min-width: 930px){
+    /*930px以上のcss*/
+    .header-1-img{
+    position:absolute;
+    left:8%;
+    top:50%;
+    transform:translateY(-50%);
+    height:52px;
+    }
+    .header-1-choice{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    height:20px;
+    right:5%;
+    text-align:center;
+    width:400px;
+    }
+    .raceprac{
+    display:inline-block;
+    margin:0;
+    margin-right:5px;
+    margin-left:5px;
+    width:46%;
+    }
+    .equip{
+    display:inline-block;
+    margin:0;
+    margin-right:5px;
+    margin-left:5px;
+    width:46%;
+    }
+    .bike-intro{
+    position:relative;
+    width:100%;
+    min-height:45vh;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-image:url(10-bike-intro.png);
+    padding:0;
+    }
+    .bike-intro-title{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:50%;
+    height:45vh;
+    color:white;
+    background-color:rgba(0,0,0,.7)
+    }
+    .bike-intro-title p{
+    height:;
+    margin:0;
+    padding:0;
+    font-size:40px;
+    font-family:sans-serif;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translateY(-50%) translateX(-50%);
+    
+    }
+    .bike-intro-content{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:0;
+    right:0;
+    width:50%;
+    height:45vh;
+    background-color:rgba(244,244,244,.7)
+    }
+    .intro-content-in{
+    font-size:20px;
+    font-family:serif;
+    padding:0;
+    padding-right:30px;
+    margin:0;
+    width:65%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
+    border-right:2px solid ;
+    text-align:center;
+    }
+    .cycling{
+    position:relative;
+    width:100%;
+    min-height:45vh;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-image:url(10-bike-intro.png);
+    padding:0;
+    margin-bottom:0;
+    }
+    .cycling-title{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:0;
+    right:0;
+    width:50%;
+    height:45vh;
+    color:white;
+    background-color:rgba(0,0,0,.7)
+    }
+    .cycling-title p{
+    height:;
+    margin:0;
+    padding:0;
+    font-size:40px;
+    font-family:sans-serif;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translateY(-50%) translateX(-50%);
+    }
+    .cycling-content{
+    margin:0;
+    padding:0;
+    position:absolute;
+    text-align:center;
+    top:0;
+    left:0;
+    width:50%;
+    height:45vh;
+    background-color:rgba(244,244,244,.7)
+    }
+    .cycling-in{
+    font-size:20px;
+    font-family:serif;
+    padding:0;
+    padding-left:30px;
+    margin:0;
+    width:65%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
+    border-left:2px solid;
+    }
+    
+    .content-equip-main{
+    width:100%;
+    }
+    .grid{
+    display:block;
+    margin:0;
+    padding:0;
+    width:100%;
+    text-align:center;
+    }
+    .grid figure {
+	position: relative;
+    display:inline-block;
+	overflow: hidden;
+	width: 28%;
+    height:auto;
+	background: black;
+	text-align: center;
+	cursor: pointer;
+    padding:0;
+    margin:10px 20px;
+    transition:.5s;
+    }
+    .grid figure:hover{
+        box-shadow:0 0 10px black;
+    }
+    /*
+    margin及び横%変更前
+    .grid figure {
+	position: relative;
+    display:inline-block;
+	overflow: hidden;
+	width: 24.3%;
+    height:auto;
+	background: #3085a3;
+	text-align: center;
+	cursor: pointer;
+    padding:0;
+    }
+    */
+    
+    
+    figure.effect-marley p {
+    font-family:serif;
+    font-weight:400;
+    color:white;
+    border-top:1px solid;
+    border-bottom:1px solid;
+    position: absolute;
+	right: 30px;
+	left: 30px;
+	padding: 10px 0;
+	bottom: 35%;
+	line-height: 1.5;
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+    }
+}
+@media screen and (max-width: 930px){
+    
+    .header-1-img{
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translateY(-50%) translateX(-50%);
+    height:40px;
+    }
+    .header-1-choice{
+        display:none;
+    }
+    
+    
+    
+    
+    
+    
+    .instagram{
+    display:inline-block;
+    height:60px;
+    position:absolute;
+    right:10%;
+    }
+    .instagram-img{
+        width:23px;
+        position:absolute;
+        top:50%;
+        transform:translateY(-50%);
+        right:0;
+    }
+    .instagrm-button{
+        margin:0;
+        padding:0;
+    }
+    .instagram-button:hover{
+        opacity:.5;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    .bike{
+        width:100%;
+        margin:0;
+        margin-bottom:20px;
+    }
+    .bike-png{
+        width:100%;
+        height:75vh;
+        object-fit:cover;
+    }
+
+    .bike-container{
+        width:50%;
+        position:absolute;
+        top:50%;
+        right:50%;
+        transform: translateY(-50%) translateX(50%);
+        color:white;
+        text-align:center;
+    }
+    .bike-title{
+        font-size:28px;
+        font-family:serif;
+        font-weight:400;
+    }
+    .bike-button{
+        display:inline-block;
+        text-decoration: none;
+        color:white;
+        background-color:darkblue;
+        width:50%;
+        padding-top:2px;
+        padding-bottom:2px;
+    }
+    .equip-png{
+        width:100%;
+    }
+    .equip-container{
+        width:50%;
+        position:absolute;
+        top:50%;
+        right:50%;
+        transform: translateY(-50%) translateX(50%);
+        color:white;
+        text-align:center;
+    }
+    .equip-title{
+        font-size:35px;
+        font-family:serif;
+        margin:0;
+        margin-bottom:10px;
+    }
+    .equip-button{
+        display:inline-block;
+        text-decoration: none;
+        color:white;
+        background-color:darkblue;
+        width:70%;
+        padding-top:2px;
+        padding-bottom:2px;
+    }
+
+    .raceprac-png{
+        width:100%;
+    }
+    .raceprac-container{
+        width:50%;
+        position:absolute;
+        top:50%;
+        right:50%;
+        transform: translateY(-50%) translateX(50%);
+        color:white;
+        text-align:center;
+    }
+    .raceprac-title{
+        font-size:35px;
+        font-family:serif;
+        margin:0;
+        margin-bottom:10px;
+    }
+    .raceprac-button{
+        display:inline-block;
+        text-decoration: none;
+        color:white;
+        background-color:darkblue;
+        width:70%;
+        padding-top:2px;
+        padding-bottom:2px;
+    }
+
+    
+    
+    
+    
+    
+    
+    
+    
+    .raceprac{
+    margin:0 auto;
+    width:95%;
+    }
+    .equip{
+    margin:0 auto;
+    margin-bottom:17px;
+    width:95%;
+    } 
+    .instagram-button span{
+        display:none;
+    }
+    
+    
+    .roadbikenotitlebox{
+        width:100%;
+    }
+    .roadbikenotitle{
+        width:80%;
+    }
+    .roadbikenotitle h1{
+        font-weight:2;
+    }
+    .roadbikenotitle p{
+        font-family:serif;
+    }
+    
+    
+    .bike-intro{
+    margin-top:70px;
+    position:relative;
+    width:100%;
+    min-height:45vh;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-image:url(10-bike-intro.png);
+    padding:0;
+    }
+    .bike-intro-title{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:12vh;
+    color:black;
+    background-color:rgba(244,244,244,.8);
+    border-bottom:3px double;
+    }
+    .bike-intro-title p{
+    margin:0;
+    padding:0;
+    font-size:26px;
+    font-family:sans-serif;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translateY(-50%) translateX(-50%);
+    
+    }
+    .bike-intro-content{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:12vh;
+    left:0;
+    width:100%;
+    height:33vh;
+    background-color:rgba(244,244,244,.8)
+    }
+    .intro-content-in{
+    font-size:16px;
+    font-family:serif;
+    margin:0;
+    width:65%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
+    border-right:1px solid ;
+    border-left:1px solid;
+        text-align:center;
+    }
+    .cycling{
+    border-top:2px solid;
+    position:relative;
+    width:100%;
+    min-height:45vh;
+    background-attachment: fixed;
+    background-size:cover;
+    background-position:center;
+    background-image:url(10-bike-intro.png);
+    padding:0;
+    }
+    .cycling-title{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:12vh;
+    color:black;
+    background-color:rgba(244,244,244,.8);
+    border-bottom:3px double;
+    }
+    .cycling-title p{
+    height:;
+    margin:0;
+    padding:0;
+    font-size:27px;
+    font-family:sans-serif;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translateY(-50%) translateX(-50%);
+    
+    }
+    .cycling-content{
+    margin:0;
+    padding:0;
+    position:absolute;
+    top:12vh;
+    left:0;
+    width:100%;
+    height:33vh;
+    background-color:rgba(244,244,244,.8)
+    }
+    .cycling-in{
+    font-size:15px;
+    font-family:serif;
+    margin:0;
+    width:65%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translateY(-50%) translateX(-50%);
+    border-right:1px solid ;
+    border-left:1px solid;
+    text-align:center;
+    }
+    
+    
+    .content-equip-title{
+        
+    }
+    .titlecontent-1{
+        width:80%;
+    }
+    .titlecontent-1 h1{
+        font-weight:2;
+    }
+    .titlecontent-1 p{
+        font-family:serif;
+    }
+    
+    
+    
+    .content-equip-main{
+    width:100%;
+    text-align:center;
+    }
+    .grid{
+    display:inline-block;
+    margin:0;
+    padding:0;
+    width:40%;
+    text-align:center;
+    }
+    .grid figure {
+	position: relative;
+    margin:10px auto;
+	overflow: hidden;
+	width: 100%;
+    height:auto;
+	background: black;
+	text-align: center;
+	cursor: pointer;
+    padding:0;
+    transition:.5s;
+    }
+    .grid figure:hover{
+        box-shadow:0 0 10px black;
+    }
+    figure.effect-marley p {
+    border-top:1px solid;
+    border-bottom:1px solid;
+    color:white;
+    position: absolute;
+	right: 30px;
+	left: 30px;
+	padding: 10px 0;
+    top:32%;
+	line-height: 1.5;
+	-webkit-transform: translate3d(0,80%,0);
+	transform: translate3d(0,80%,0);
+    font-size:12px;
+    }
+    .effect-marley h2{
+        font-size:20px;
+    }
+    
+    
+    
+    
+    /*ここからモーションボタンの携帯版*/
+    
+    button {
+        font-size:12px;
+        color:white;
+        background-color:rgba(0,0,0,.4);
+        border-width:2px solid white;
+        position:relative;
+        margin:1em;
+        display:inline-block;
+        padding:0.5em 1em;
+        transition:all 0.3s ease-in-out;
+        text-align:center;
+        font-family:comfortaa;font-weight:bold
+    }
+    button:before, button:after {
+        content:'';
+        display:block;
+        position:absolute;
+        border-color:white;
+        box-sizing:border-box;
+        border-style:solid;
+        width:1em;
+        height:1em;
+        transition:all 0.3s ease-in-out
+    }
+    button:before {
+        top:-6px;
+        left:-6px;
+        border-width:2px 0 0 2px;
+        z-index:5;
+    }
+    button:after {
+        bottom:-6px;
+        right:-6px;
+        border-width:0 2px 2px 0;
+    }
+    button:hover:before, button:hover:after {
+        width:calc(100% + 20px);
+        height:calc(100% + 20px);
+        border-color:#fff;
+    }
+    button:hover {
+        color:#353535;
+        background-color:#fff;
+        border-color:#fff;
+    }
+    .panel {
+        text-align:center;
+        margin:auto;
+    }
+    /*ここまで*/
+    .motionbutton:hover{
+        cursor:grab;
+    }
+}
+
+.footer{
+    width:1440px;
+    position:relative;
+    height:250px;
+    background-color:lightgray;
+    margin-top:100px;
+    font-size:13px;
+    border-top:1px solid;
+}
+.footer-logo{
+    display:inline-block;
+    width:300px;
+    position:absolute;
+    top:75px;
+    left:150px;
+}
+.footer-choice-1{
+    position:absolute;
+    width:200px;
+    top:70px;
+    right:70px;
+    border-LEFT:1px solid darkblue;
+}
+.footer-choice-1 ul{
+    list-style:none;
+    font-family: 'Cardo', serif;
+    line-height:1.5;
+    
+}
+
+
+.footer-choice-2{
+    position:absolute;
+    width:400px;
+    left:470px;
+    top:45px;
+    font-family: 'Cardo', serif;
+}
+.li2-1{
+    display:inline-block;
+    list-style:none;
+    text-decoration:none;
+    margin:0;
+    line-height:1.5;
+}
+.li2-2{
+    display:inline-block;
+    float:right;
+    list-style:none;
+    margin:0;
+    line-height:1.5;
+}
+.li2-1 p, .li2-2 p{
+    font-family:serif;
+    font-size:15px;
+    margin-bottom:1px;
+    color:midnightblue;
+}
+.foot-1 , .foot-2{
+    text-decoration:none;
+    color:white;
+}
+.foot-2{
+    color:white;
+}
+.foot-2:hover{
+    color:darkblue;
+}
+.foot-1:hover{
+    color:darkblue;
+}
