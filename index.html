@@ -40,18 +40,23 @@
                 $('html,body').animate({ scrollTop: 0 }, '1');
                 var win = $(window).width();
                 
-                $(window).on("resize", function() {
-                    var w = $(window).width(),
-						$winH = $(window).height(),
-						v = $(".content-3-caran-main-sp").offset().top,
-						scroll = $(window).scrollTop() + $winH;
-					if(scroll < v){
-						if(w < 930) {
+				
+				
+				
+				var lastInnerWidth = window.innerWidth ;
+				window.addEventListener( "resize", function () {
+					if ( lastInnerWidth != window.innerWidth ) {
+						lastInnerWidth = window.innerWidth ;
+						var w = $(window).width(),
+							$winH = $(window).height(),
+							v = $(".content-3-caran-main-sp").offset().top,
+							scroll = $(window).scrollTop() + $winH;
+						if(scroll < v){
 							window.location = window.location;
 							console.log("abcd");
 						}
 					}
-                  });
+				});
             });
         </script>	
         <script type="text/javascript" src="writingtool.js"></script>
@@ -78,7 +83,7 @@
             <div class="header-logo">
                 <img class="header-logo-img" src="birome-staitonery.png">
                 <div class="reachmaikeru"></div>
-                <img class="header-instagram" src="instagram.png">
+                <img class="header-instagram" src="instagram.webp">
             </div>
             
             <div class="header-bottom"><!--pc用-->
@@ -99,7 +104,7 @@
                     <a href="#tonotebook">ノート</a>
                 </div>
                 <div class="insta">
-                    <a href="#"><img src="instagram.png"></a>
+                    <a href="#"><img src="instagram.webp"></a>
                 </div>
             </div>
             <div class="header-bottom-sp"><!--sp用-->
@@ -138,30 +143,30 @@
                     <div class="swiper-container slider1">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
-                                <img class="img1" src="content-1-img-7.jpg" alt="Swiper01">
-                                <img class="img1-1" src="sp-slide-1.jpg" alt="Swiper01">
+                                <img class="img1" src="content-1-img-7.webp" alt="Swiper01">
+                                <img class="img1-1" src="sp-slide-1.webp" alt="Swiper01">
                                 <div class="img1-1-1">
                                     
                                     <p><span class="faber-slider">Graf von Faber-Castell</span><br>classic collection pernambuco<br><span class="jinu">クラシックコレクション ペルナンブーコ</span></p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img class="img1" src="10-ecridor.png" alt="Swiper03">
-                                <img class="img1-1" src="sp-slide-2.jpg" alt="Swiper03">
+                                <img class="img1" src="10-ecridor.webp" alt="Swiper03">
+                                <img class="img1-1" src="sp-slide-2.webp" alt="Swiper03">
                                 <div class="img1-1-2">
                                     <p><span class="caran-slider">Caran d'Ache</span><br>ecridor venetian<br><span class="jinu"> エクリドール ベネシアン</span></p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img class="img1" src="content-1-img-6.jpg" alt="Swiper05">
-                                <img class="img1-1" src="sp-slide-3.jpg" alt="Swiper05">
+                                <img class="img1" src="content-1-img-6.webp" alt="Swiper05">
+                                <img class="img1-1" src="sp-slide-3.webp" alt="Swiper05">
                                 <div class="img1-1-3">
                                     <p><span class="caran-slider">Caran d'Ache</span><br>ecridor&amp;leman<br><span class="jinu"> エクリドール&amp;レマン</span></p>
                                 </div>
                             </div>
                             <div class="swiper-slide">
-                                <img class="img1" src="content-1-img-5.jpg" alt="Swiper06">
-                                <img class="img1-1" src="sp-slide-4.jpg" alt="Swiper06">
+                                <img class="img1" src="content-1-img-5.webp" alt="Swiper06">
+                                <img class="img1-1" src="sp-slide-4.webp" alt="Swiper06">
                                 <div class="img1-1-4">
                                     <p><span class="pel-slider">Pelikan</span><br>souverän m400<br><span class="jinu">スーべレーンM400</span></p>
                                 </div>
@@ -231,7 +236,7 @@
                         <div class="sukima-1-1"></div>
                         <p class="p2 fadeInSlide3">精密機器で知られる<br>スイスメイドの自社製品が高品質<br>であることに確かな自信を持っていることが<br>製品に一生保証がついていることから想像できる</p>
                         <div class="sukima-1-2"></div>
-                        <img class="leman-img fadeInUp3" src="image2.png">
+                        <img class="leman-img fadeInUp3" src="image2.webp">
                         <div class="panel fadeInUp4">
                             <button>READ MORE</button>
                         </div>
@@ -240,12 +245,12 @@
                 <!--ファーバーカステル-->
                 <div class="faber-castell fadeInSlide4">
                     <div class="title-2 fadeInUp1">
-                        <img class="title-faber" src="faber-logo.png">
+                        <img class="title-faber" src="faber-logo.webp">
                         <p class="fab-p1 fadeInUp2"><span class="title-2-span">ドイツ</span>のファーバー伯爵家創業のメーカー.<br>鉛筆の基礎を初めて作ったメーカーであり<br>世界最古の筆記具メーカーである.<br>木材と貴金属のハーモニーが<br>美しい筆記具が多い</p>
                         <div class="sukima-2-1"></div>
                         <p class="fab-p2 fadeInSlide2">色鉛筆で有名であることや<br>フラッグシップモデルであるclassicの<br>化粧箱が木製である事からブランドが木材を<br>中心とした製品作りを重視していることがわかる.</p>
                         <div class="sukima-2-2"></div>
-                        <img class="title-faber-pen fadeInSlide1" src="faber-castel-pen3.png">
+                        <img class="title-faber-pen fadeInSlide1" src="faber-castel-pen3.webp">
                         <div class="panel2 fadeInUp4">
                             <button>READ MORE</button>
                         </div>
@@ -255,7 +260,7 @@
                 <div class="pelikan">
                     <div class="title-3">
                         <img class="title-pelikan fadeInUp5" src="pelikan-logo-2.png">
-                        <img class="pelikan-pen fadeInSlide4" src="pelikan-pen3.png">
+                        <img class="pelikan-pen fadeInSlide4" src="pelikan-pen3.webp">
                         <div class="pel-sen-1"></div>
                         <p class="pel-p1 fadeInUp5">強化プラスチック系樹脂を用いて形成される胴軸と<br>数多くの工程を経て作られるペン先が合わさり<br>ペンと言う名の芸術品が生まれる.</p>
                         <p class="pel-p2 fadeInUp5"><span class="s1">スイス</span>にある筆記具ブランド.<br>ドイツ人がインク工場を始めたのが起源で <br>現在の業態に変化した当初に発売されたモデルが<br>現在もその人気から看板商品として販売され続けている.</p>
@@ -269,7 +274,7 @@
                     <!--waternman-->
                     <div class="waterman">
                         <div class="waterman2">
-                            <img class="waterman-logo fadeInSlide3" src="waterman-logo.png">
+                            <img class="waterman-logo fadeInSlide3" src="waterman-logo.webp">
                             <img class="waterman-pen fadeInAp" src="waterman-pen2.png">
                             <p class="water-p1 fadeInUp5"><span>フランス</span>で全てのペンが作られている.</p>
                             <div class="water-sen-1"></div>
@@ -314,7 +319,7 @@
                         <img src="caran-logo.png">
                         <img class="img-fab" src="graf-von-faber-logo.png">
                         <img src="uni-logo.png">
-                        <img src="waterman-logo.png">
+                        <img src="waterman-logo.webp">
                         <img src="pelikan-logo-2.png">
                     </div>
                     
@@ -335,14 +340,14 @@
                     <div class="content-3-caran">
                         <a name="tocarandache"></a>
                         <div class="content-3-caran-title">
-                            <img class="content-3-caran-title-back" src="caran-bacl.png"><!--pcだけ-->
-                            <img class="content-3-caran-title-back-sp" src="caran-title-back-sp.png"><!--spだけ-->
+                            <img class="content-3-caran-title-back" src="caran-bacl.webp"><!--pcだけ-->
+                            <img class="content-3-caran-title-back-sp" src="caran-title-back-sp.webp"><!--spだけ-->
                             <img class="content-3-caran-title-logo" src="caran-logo.png">
                         </div>
                         <div class="content-3-caran-main"><!--pcだけ-->
                             <div class="content-3-caran-main-leman">
                                 <div class="content3-caran-move-img-leman">
-                                    <img class="move-leman transport" src="image3.png">
+                                    <img class="move-leman transport" src="image3.webp">
                                     <div class="point-1"></div>
                                     <div class="point-10 transport10"></div>
                                 </div>
@@ -396,7 +401,7 @@
                         <div class="content-3-caran-main-sp"><!--spだけ-->
                             <div class="caran-leman-sp">
                                 <h1 class="fadeInAp-sp">LEMAN COLLECTION<br><span>LÉMAN GRAND BLEU Ballpoint Pen</span></h1>
-                                <img class="leman-img-sp fadeInAp-sp" src="image2.png">
+                                <img class="leman-img-sp fadeInAp-sp" src="image2.webp">
                                 <p class="fadeInAp-sp">豊かで壮麗な色づかいと流れるような曲線が美しいレマン コレクション. 空、季節、湖岸沿いに続く命あるものの姿を鮮やかに映し出す、ジュネーブの入江に続く湖の水面の繊細な色合いを描き出しました. 光沢がありながらかすかにマット感も残すラッカーでシルエットを仕上げたこのペンはジュネーブに拠点を置くメゾンの独自のスタイルと専門技術の高さを感じさせます.</p>
                                 <img class="leman-img-sp-1 fadeInAp-sp" src="imga5.png">
                                 <h1 class="fadeInAp-sp">彫刻<br>engaving</h1>
@@ -408,7 +413,7 @@
                                 <h1 class="ecridor-sp fadeInAp-sp">ECRIDOR COLLECTION<br><span class="caran-sp-2">ECRIDOR VENETIAN</span></h1>
                                 <img class="caran-img-sp fadeInAp-sp" src="caran-ecridor-apa.png">
                                 <p class="fadeInAp-sp">何十年もの時を超越して現在もとても人気のある特徴的で象徴的な6角形のシルバーのボディに彫刻を施すデザイン. スイスクオリティを表す言葉であるエレガンス、堅牢性、信頼性そのものをエクリドールが体現しています。クラシカル、都会的、スポーティ、ロマンティックといった要素を全て兼ね備えているのがこのエクリドールコレクションです。</p>
-                                <img class="ecridor-img-sp-1 fadeInAp-sp" src="image6.png">
+                                <img class="ecridor-img-sp-1 fadeInAp-sp" src="image6.webp">
                                 <h1 class="fadeInAp-sp">胴軸<br>PEN BODY</h1>
                                 <p class="fadeInAp-sp">真鍮にシルバープレートとパラジウムコートをした胴軸に彫刻を施したものになっています. パラジウムコートをすることで金属の劣化を防ぐので銀のような輝きを長期間お手入れすることなく保つことができます。 パラジウムはここ数年で価値が急騰している貴金属で、プラチナよりも取引相場が高いと言われている素材です。</p>
                                 <h1 class="fadeInAp-sp">インク<br>ink cartridge</h1>
@@ -427,8 +432,8 @@
                     <div class="content-3-faber"><!--PCだけ-->
                         <a name="tofabercastell"></a>
                         <div class="content-3-faber-title"><!--写真タイトル--><!--top:0;-->
-                            <img class="content-3-faber-title-img" src="grafvon-faber-back.png">
-                            <img class="content-3-faber-title-logo" src="graf-von-faber-logo.png">
+                            <img class="content-3-faber-title-img" src="grafvon-faber-back.webp">
+                            <img class="content-3-faber-title-logo" src="graf-von-faber-logo.webp">
                         </div>
                         <div class="content-3-faber-nonemove"><!--sticky内容--><!--top:0px;-->
                             <img class="classic-body" src="classic-body-5.png"><!--本体-->
@@ -458,7 +463,7 @@
                     </div>
                     <div class="content-3-faber-sp"><!--spだけ-->
                         <div class="content-3-faber-title-sp">
-                            <img class="faber-title-sp" src="faber-back-sp.png">
+                            <img class="faber-title-sp" src="faber-back-sp.webp">
                             <img class="faber-title-logo-sp" src="graf-von-faber-logo.png">
                         </div>
                         <div class="faber-main-text-sp">
@@ -478,7 +483,7 @@
                             <p class="fadeInAp-sp">世界に一つとして同じ物が存在しない素材、それが木です。使用し、時間が経過していくに連れて新たな光沢やグリップ感などが生まれていきます。自分だけのこの世に二つと無い専用の筆記具が時間をかけて完成していくのです。買ったはいいもののあまりにも高価すぎて日常使いできない、と考える人もいるかもしれません。しかし、日常使いすることによって軸が手に馴染んでいき更には多少の指先の油分によって表面の劣化を防ぐことになります。
                             </p>
                         </div>
-                        <img class="faber-pen-1-sp fadeInAp-sp" src="faber-pen-note-sp.jpg">
+                        <img class="faber-pen-1-sp fadeInAp-sp" src="faber-pen-note-sp.webp">
                         <div class="fab-under-last-sp">
                             <h1 class="fadeInAp-sp">デザイン <span>&amp;</span> 機能性<br><span>design &amp; functionality</span></h1> 
                             <p class="fadeInAp-sp">バイオリンの弓に通常使用されるほど硬く耐久性のある木材から作られる胴軸は唯一無二な木目や色を纏っています. 世界中の人々を魅了しているプラチナの美しい輝きと温かみのある木目から生み出される洗練されたデザインは貴方の心も掴むことでしょう. さらにバネ式のクリップなど複雑な機構によって高い機能性を実現しています. </p>
@@ -496,7 +501,7 @@
                     <div class="content-3-pel"><!--PCだけ-->
                         <a name="topelikan"></a>
                         <div class="content-3-pel-title"><!--写真タイトル-->
-                            <img class="content-3-pel-title-img" src="pel-title-5.jpg">
+                            <img class="content-3-pel-title-img" src="pel-title-5.webp">
                             <img class="content-3-pel-title-logo" src="pelikan-logo-2.png">
                             <div class="pel-title-img-back"></div>
                         </div>
@@ -505,12 +510,12 @@
                         <div class="content-3-pel-main"><!--pelのメインの親要素これがposition:relative;-->
                             <div class="pel-nonemove"><!--動かない方 z-index 10-->
                                 <div class="pel-nonemove-line">
-                                    <img class="pelikan-pen-1" src="pel-nonemove-pen.png">
-                                    <img class="pelikan-pen-2" src="pelikan-green.png">
+                                    <img class="pelikan-pen-1" src="pel-nonemove-pen.webp">
+                                    <img class="pelikan-pen-2" src="pelikan-green.webp">
                                 </div>
                                 <div class="pelikan-nonemove-sono2">
-                                    <img class="pelikan-nonemove-pic-2 pelikan-pen-1" src="pel-nonemove-pen.png">
-                                    <img class="pelikan-nonemove-pic-2 pelikan-pen-2" src="pelikan-green.png">
+                                    <img class="pelikan-nonemove-pic-2 pelikan-pen-1" src="pel-nonemove-pen.webp">
+                                    <img class="pelikan-nonemove-pic-2 pelikan-pen-2" src="pelikan-green.webp">
                                 </div>
                             </div>
                             <div class="pel-move"><!--動く方 z-index 20-->
@@ -518,10 +523,10 @@
                                     <h1>Pelikan Souverän</h1>
                                     <p>Since 1950</p>
                                     <h3>色を選択する</h3>
-                                    <a class="pelikan-button-blue"><img src="pelikan-mark-blue.png"></a>
-                                    <a class="pelikan-button-green"><img src="pelikan-mark-green.png"></a>
-                                    <img class="pensaki-1" src="pensaki.png">
-                                    <img class="pensaki-2" src="pensaki.png">
+                                    <a class="pelikan-button-blue"><img src="pelikan-mark-blue.webp"></a>
+                                    <a class="pelikan-button-green"><img src="pelikan-mark-green.webp"></a>
+                                    <img class="pensaki-1" src="pensaki.webp">
+                                    <img class="pensaki-2" src="pensaki.webp">
                                     <img class="circle-1" src="circle.png">
                                     <img class="circle-2" src="circle.png">
                                 </div>
@@ -543,7 +548,7 @@
                 
                     <div class="pelikan-sp"><!--spだけ-->
                         <div class="pelikan-title-sp">
-                            <img class="pelikan-title-img-1-sp" src="pelikan-title-sp.png">
+                            <img class="pelikan-title-img-1-sp" src="pelikan-title-sp.webp">
                             <img class="pelikan-title-img-2-sp" src="pelikan-logo-2.png">
                         </div>
                         <div class="pelikan-main-sp">
@@ -642,8 +647,8 @@
                         <p>スイスにある筆記具ブランドでドイツ人がインク工場を始めたのが起源. 現在の業態に変化した当初に発売されたモデルが今でもその高い人気から看板商品として販売され続けている.</p>
                     </div>
                     <div class="water-uni-title-image"><!--spだけ-->
-                        <img class="water-uni-sp-1" src="water-uni-title-image-1-sp.png">
-                        <img class="water-uni-sp-logo-1" src="waterman-logo.png">
+                        <img class="water-uni-sp-1" src="water-uni-title-image-1-sp.webp">
+                        <img class="water-uni-sp-logo-1" src="waterman-logo.webp">
                         <img class="water-uni-sp-logo-2" src="uni-logo.png">
                     </div>
                     
@@ -653,7 +658,7 @@
                             <p><span>made in France</span><br>Everything flows from the elegant slim shape. Features a dynamic combination of elements like the slim clip and broad ring, to enhance the distinctively narrow form.</p>
                         </div>
                         <div class="water-circle-sp">
-                            <img class="water-circle-inner-sp" src="water-circle-1.png">
+                            <img class="water-circle-inner-sp" src="water-circle-1.webp">
                         </div>
                         <div class="water-under-circle-sp">
                             <h1>Product lineup</h1>
@@ -697,7 +702,7 @@
                         </div>
                         <div class="uni-main-image">
                             <div class="uni-main-image-1">
-                                <img src="pure-molt-1.png" class="fadeInAp-sp-1">
+                                <img src="pure-molt-1.webp" class="fadeInAp-sp-1">
                                 <p class="fadeInAp-sp-1"><a href="#">Jetstream 5 in 1</a></p>
                             </div>
                             <div class="uni-main-image-2">
@@ -711,8 +716,8 @@
                     <div class="content-3-water-uni"><!--pcだけ-->
                         <a name="towatermanuni"></a>
                         <div class="content-3-title">
-                            <img class="water-uni-title" src="water-and-uni-title.png">
-                            <img class="water-logo-content3" src="waterman-logo.png">
+                            <img class="water-uni-title" src="water-and-uni-title.webp">
+                            <img class="water-logo-content3" src="waterman-logo.webp">
                             <img class="uni-logo-content3" src="uni-logo.png">
                         </div>
                         <div class="content-3-water">
@@ -749,7 +754,7 @@
                             </div>
                             <div class="float-del"></div>
                             <img class="uni-pen-img" src="unipuremalt1.png">
-                            <img class="uni-pen-img-1" src="pure-molt-1.png">
+                            <img class="uni-pen-img-1" src="pure-molt-1.webp">
                             <div class="uni-content3-para">
                             </div>
                         </div>
@@ -759,7 +764,7 @@
                         <div class="imac-sticky">
                             <div class="hide-1"></div>
                             <div class="hide-2"></div>
-                            <img class="ipad-inner" src="moto-img-2.png">
+                            <img class="ipad-inner" src="moto-img-2.webp">
                             <img class="ipad" src="ipadpro-apa.png">
                             <div class="ipad-sin"></div>
                         </div>
@@ -772,19 +777,19 @@
                                     <div class="swiper-container slider2">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img class="img2" src="pencase-1-3.jpg" alt="Swiper01">
-                                                <img class="img3" src="pencase-2-4.jpg" alt="Swiper01">
-                                                <img class="img4" src="pencase-3-2.png" alt="Swiper01">
+                                                <img class="img2" src="pencase-1-3.webp" alt="Swiper01">
+                                                <img class="img3" src="pencase-2-4.webp" alt="Swiper01">
+                                                <img class="img4" src="pencase-3-2.webp" alt="Swiper01">
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="img2" src="pencase-1-1-1.jpg" alt="Swiper02">
-                                                <img class="img3" src="pencase-2-3.png" alt="Swiper02">
-                                                <img class="img4" src="pencase-3-1.png" alt="Swiper02">
+                                                <img class="img2" src="pencase-1-1-1.webp" alt="Swiper02">
+                                                <img class="img3" src="pencase-2-3.webp" alt="Swiper02">
+                                                <img class="img4" src="pencase-3-1.webp" alt="Swiper02">
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="img2" src="pencase-1-1.jpg" alt="Swiper03">
-                                                <img class="img3" src="pencase-2-1.png" alt="Swiper03">
-                                                <img class="img4" src="pencase-2-1.png" alt="Swiper03">
+                                                <img class="img2" src="pencase-1-1.webp" alt="Swiper03">
+                                                <img class="img3" src="pencase-2-1.webp" alt="Swiper03">
+                                                <img class="img4" src="pencase-2-1.webp" alt="Swiper03">
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-black"></div>
@@ -793,9 +798,9 @@
                                     </div>
                                 </div>
                                 <div class="pencase-img-select">
-                                    <div class="select-1"><img src="pencase-1-1-1-1.png"><p>二本挿しペンケース<br>Romeo Oil Kip pencase</p></div>
+                                    <div class="select-1"><img src="pencase-1-1-1-1.webp"><p>二本挿しペンケース<br>Romeo Oil Kip pencase</p></div>
                                     <div class="select-2"><img src="apa-roll.png"><p>ロールペンケース<br>Pent by KC's Robin Hood</p></div>
-                                    <div class="select-3"><img src="apa-normal.png"><p>ファスナーペンケース<br>SOMES ラウンドファスナー</p></div>
+                                    <div class="select-3"><img src="apa-normal.webp"><p>ファスナーペンケース<br>SOMES ラウンドファスナー</p></div>
                                 </div>
                             </div>
                             <div class="pencase-paragraph"><!--画像説明部分-->
@@ -907,14 +912,14 @@
                             <div class="note-main">
                                 <div class="note-main-faber">
                                     <img class="note-faber-logo" src="graf-von-faber-logo.png">
-                                    <img class="note-faber-pic-1" src="1111-note-faber-14.png">
+                                    <img class="note-faber-pic-1" src="1111-note-faber-14.webp">
                                     <div class="note-faber-title">
                                         <p class="note-faber-title-1">Linen Bound Notebooks<br><span>リネン綴じノート</span></p>
-                                        <p class="note-faber-title-2">このリネン綴じノートブックはバイエルン州にある製本会社で作られています。<br>万年筆やボールペンなど、どのような筆記具でも滑らかな筆滑りを実現し、裏に透けにくい高品質な用紙を用いています。一枚一枚のシートに手の込んだ耐久性の高いスレッドステッチを施すことで、幾度のページ開閉にも耐えられるほどタフな製品に仕上がります。書きやすさとデザインを追求したこの製品はその値段に値する物だと、手にしてみれば感じることができるでしょう。
+                                        <p class="note-faber-title-2">このリネン綴じノートブックはバイエルン州にある製本会社xで作られています。<br>万年筆やボールペンなど、どのような筆記具でも滑らかな筆滑りを実現し、裏に透けにくい高品質な用紙を用いています。一枚一枚のシートに手の込んだ耐久性の高いスレッドステッチを施すことで、幾度のページ開閉にも耐えられるほどタフな製品に仕上がります。書きやすさとデザインを追求したこの製品はその値段に値する物だと、手にしてみれば感じることができるでしょう。
                                         </p>
                                     </div>
                                     <div class="note-faber-main">
-                                        <img class="note-faber-pic-2" src="1111-note-faber-16.png">
+                                        <img class="note-faber-pic-2" src="1111-note-faber-16.webp">
                                         <div class="note-faber-main-1">
                                             <h3>色とサイズ</h3>
                                             <p>
@@ -922,7 +927,7 @@
                                             </p>
                                         </div>
                                         <div class="note-faber-main-2">
-                                            <img class="note-faber-pic-3" src="1111-note-faber-19.png">
+                                            <img class="note-faber-pic-3" src="1111-note-faber-19.webp">
                                             <div class="note-faber-main-2-1">
                                                 <h3>Linen Bound Notebooks Golden Brown &#215;<br>GRAF VON FABER-CASTELL CLASSIC PERNAMBUCO</h3>
                                                 <p>
@@ -1021,9 +1026,9 @@
                         <div class="section-2-pencase-sp-over">
                             <a name="pencase-sp"></a>
                             <div class="section-2-choice-sp"><!--種類の選択-->
-                                <div class="select-1-sp"><img src="apa-2-pencase-sp.png"><p>二本挿しペンケース</p></div>
-                                <div class="select-2-sp"><img src="apa-roll-pencase-sp.png"><p>ロールペンケース</p></div>
-                                <div class="select-3-sp"><img src="apa-4-pencase-sp.png"><p>ファスナーペンケース</p></div>
+                                <div class="select-1-sp"><img src="apa-2-pencase-sp.webp"><p>二本挿しペンケース</p></div>
+                                <div class="select-2-sp"><img src="apa-roll-pencase-sp.webp"><p>ロールペンケース</p></div>
+                                <div class="select-3-sp"><img src="apa-4-pencase-sp.webp"><p>ファスナーペンケース</p></div>
                             </div>
                             <div class="section-2-pencase-sp"><!--pencaseセクション-->
                                 <div class="pencase-slider-title-sp">
@@ -1035,19 +1040,19 @@
                                     <div class="swiper-container slider3">
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
-                                                <img class="img3-sp" src="2-penholder.png" alt="Swiper01">
-                                                <img class="img4-sp" src="roll-penholder.png" alt="Swiper01">
-                                                <img class="img5-sp" src="4-penholder.png" alt="Swiper01">
+                                                <img class="img3-sp" src="2-penholder.webp" alt="Swiper01">
+                                                <img class="img4-sp" src="roll-penholder.webp" alt="Swiper01">
+                                                <img class="img5-sp" src="4-penholder.webp" alt="Swiper01">
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="img3-sp" src="pencase-1-1.jpg" alt="Swiper02">
-                                                <img class="img4-sp" src="pencase-2-4.jpg" alt="Swiper02">
-                                                <img class="img5-sp" src="pencase-3-1.png" alt="Swiper02">
+                                                <img class="img3-sp" src="pencase-1-1.webp" alt="Swiper02">
+                                                <img class="img4-sp" src="pencase-2-4.webp" alt="Swiper02">
+                                                <img class="img5-sp" src="pencase-3-1.webp" alt="Swiper02">
                                             </div>
                                             <div class="swiper-slide">
-                                                <img class="img3-sp" src="pencase-1-1-1.jpg" alt="Swiper03">
-                                                <img class="img4-sp" src="pencase-2-1.png" alt="Swiper03">
-                                                <img class="img5-sp" src="pencase-3-2.png" alt="Swiper03">
+                                                <img class="img3-sp" src="pencase-1-1-1.webp" alt="Swiper03">
+                                                <img class="img4-sp" src="pencase-2-1.webp" alt="Swiper03">
+                                                <img class="img5-sp" src="pencase-3-2.webp" alt="Swiper03">
                                             </div>
                                         </div>
                                         <div class="swiper-pagination swiper-pagination-lightgray"></div>
@@ -1201,7 +1206,7 @@
                             <p class="p2-sp">編集者紹介</p>
                             <li><a href="#">初心者のWEB開発</a></li>
                         </ul>
-                        <h3>編集期間 2020/05/12 ~ 2021/1/20　</h3>
+                        <h3>編集期間 2020/05/12 ~ 2020/8/20　</h3>
                     </div>
                 </div>
             </div>
