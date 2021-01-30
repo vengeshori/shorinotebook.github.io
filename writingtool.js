@@ -1,32 +1,5 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.addEventListener('DOMContentLoaded', function () {
-  // @media screen and (max-width: 780px) と同じ
   var mql = window.matchMedia('screen and (max-width: 1030px)');
 
   function checkBreakPoint(mql) {
@@ -361,7 +334,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
     } else {
       // PC向け
-        let t;
+        var t;
 
         $(function(){
             $('.writing').click(function(){
@@ -1301,10 +1274,10 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // ブレイクポイントの瞬間に発火
-  mql.addListener(checkBreakPoint);
 
   // 初回チェック
   checkBreakPoint(mql);
+	
 });
 
 /*はっかポイントに関しては後日確定させる*/
