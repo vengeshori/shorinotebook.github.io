@@ -3399,6 +3399,7 @@
         display:none;
     }
     .header-bottom-sp{
+		display:none;
         width:100%;
         position:fixed;
         z-index:10000000;
@@ -3477,6 +3478,10 @@
         margin-top:8px;
         margin-bottom:8px;
     }
+	.sppon{
+		display:inline-block;
+		transition:.3s;
+	}
     
     /*headerここまで*/
     .header-main-sukima{

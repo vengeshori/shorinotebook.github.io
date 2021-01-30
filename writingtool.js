@@ -6,16 +6,39 @@ document.addEventListener('DOMContentLoaded', function () {
     if (mql.matches) {
       // スマホ向け
         $(".r-none-sp").css("opacity","1");
-        $(".header-ball-point").on("click", function() {
-            $(".header-bottom-sp-choice-2-pen").slideToggle();
-        });
-        $(".header-pencase").on("click", function() {
-            $(".header-bottom-sp-choice-2-pencase").slideToggle();
-        });
-        $(".header-note").on("click", function() {
-            $(".header-bottom-sp-choice-2-note").slideToggle();
-        });
-        console.log("jj");
+		$(function(){
+			var t,m,n;
+			$(".header-ball-point").on("click", function() {
+				$(".header-bottom-sp-choice-2-pen").slideToggle();
+				if(t != 1){
+					$(".sppon-1").css("transform","rotate(180deg)");
+					t=1;
+				}else{
+					$(".sppon-1").css("transform","rotate(0deg)");
+					t = 2;
+				}
+        	});
+        	$(".header-pencase").on("click", function() {
+            	$(".header-bottom-sp-choice-2-pencase").slideToggle();
+				if(m != 1){
+					$(".sppon-2").css("transform","rotate(180deg)");
+					m=1;
+				}else{
+					$(".sppon-2").css("transform","rotate(0deg)");
+					m = 2;
+				}
+			});
+			$(".header-note").on("click", function() {
+				$(".header-bottom-sp-choice-2-note").slideToggle();
+				if(n != 1){
+					$(".sppon-3").css("transform","rotate(180deg)");
+					n=1;
+				}else{
+					$(".sppon-3").css("transform","rotate(0deg)");
+					n = 2;
+				}
+        	});
+		});
         
         /*要素がふわっと表示する関数(fadeInUp)*/
         $(function() {
