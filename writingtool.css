@@ -4890,7 +4890,6 @@ box-shadow: inset 14.71px 14.71px 23px #D6D8DC, inset -14.71px -14.71px 23px #FF
     }
     .open-close-sp{
         position:relative;
-        height:100vh;
         background-color:white;
         position:sticky;
         top:0;
