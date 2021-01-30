@@ -8,39 +8,12 @@ document.addEventListener('DOMContentLoaded', function () {
         $(".r-none-sp").css("opacity","1");
         $(".header-ball-point").on("click", function() {
             $(".header-bottom-sp-choice-2-pen").slideToggle();
-            $(".header-bottom-sp-choice-2-pencase").css("display","none");
-            $(".header-bottom-sp-choice-2-note").css("display","none");
-            $(".header-ball-point").css("border","1px solid");
-            $(".header-ball-point").css("color","black");
-            $(".header-pencase").css("border","1px solid rgba(0,0,0,.5)");
-            $(".header-pencase").css("color","rgba(0,0,0,.5)");
-            $(".header-note").css("border","1px solid rgba(0,0,0,.5)");
-            $(".header-note").css("color","rgba(0,0,0,.5)");
-            console.log("aa")
         });
         $(".header-pencase").on("click", function() {
             $(".header-bottom-sp-choice-2-pencase").slideToggle();
-            $(".header-bottom-sp-choice-2-pen").css("display","none");
-            $(".header-bottom-sp-choice-2-note").css("display","none");
-            $(".header-pencase").css("border","1px solid");
-            $(".header-pencase").css("color","black");
-            $(".header-ball-point").css("border","1px solid rgba(0,0,0,.5)");
-            $(".header-ball-point").css("color","rgba(0,0,0,.5)");
-            $(".header-note").css("border","1px solid rgba(0,0,0,.5)");
-            $(".header-note").css("color","rgba(0,0,0,.5)");
-            console.log("bb")
         });
         $(".header-note").on("click", function() {
             $(".header-bottom-sp-choice-2-note").slideToggle();
-            $(".header-bottom-sp-choice-2-pen").css("display","none");
-            $(".header-bottom-sp-choice-2-pencase").css("display","none");
-            $(".header-note").css("border","1px solid");
-            $(".header-note").css("color","black");
-            $(".header-ball-point").css("border","1px solid rgba(0,0,0,.5)");
-            $(".header-ball-point").css("color","rgba(0,0,0,.5)");
-            $(".header-pencase").css("border","1px solid rgba(0,0,0,.5)");
-            $(".header-pencase").css("color","rgba(0,0,0,.5)");
-            console.log("cc")
         });
         console.log("jj");
         
