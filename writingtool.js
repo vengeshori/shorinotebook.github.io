@@ -38,6 +38,9 @@ document.addEventListener('DOMContentLoaded', function () {
 					n = 2;
 				}
         	});
+			$(".header-bottom-sp-choice-1 ul a").on("click",function(){
+				$(".header-bottom-sp").animate({"width":"toggle"});
+			});
 		});
         
         /*要素がふわっと表示する関数(fadeInUp)*/
@@ -656,6 +659,8 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         });
 
+		
+		/*ペンケース洗濯*/
         $('.pencase-2').css('opacity', '0');
         $('.pencase-3').css('opacity', '0');
         $(function() {
@@ -979,6 +984,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     } else {
                         
                         
+						
                         
                         
                         /*ここから*/
@@ -987,10 +993,10 @@ document.addEventListener('DOMContentLoaded', function () {
                         };
                         if (scroll + ($winH / 2) > position1) {
                             $('.pel-nonemove-line img').css({
-                                right: (current + 200)*100/1440 + '%'
+                                right: (current + 200)*120/1440 + '%'
                             });
                             $('.pelikan-nonemove-pic-2').css({
-                                right: (current + 150)*100/1440 + '%'
+                                right: (current + 150)*120/1440 + '%'
                             });
                             $('.pel-nonemove-line').css('opacity', '1');
                             $('.pelikan-nonemove-sono2').css({
