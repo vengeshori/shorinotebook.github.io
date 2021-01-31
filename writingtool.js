@@ -205,21 +205,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 var $win = $(window),
                     $winH = $win.height(),
                     $connect = $('.moveing-part'),
-                    position = $connect.offset().top,
-                    position2 = position + ($winH/3),
+                    position = $connect.offset().top - $winH,
                     slide,
                     opac1,
-                    opac2,
-                    opac3,
-                    opac4,
                     scroll;
                 $win.on('load scroll', function() {
                     scroll = $win.scrollTop();
                     slide = 130*(scroll - position)/$winH;
                     opac1 = 2.5*(scroll - position)/$winH;
-                    opac2 = 2.1*(scroll - position)/$winH;
-                    opac3 = 1.7*(scroll - position)/$winH;
-                    opac4 = 1.3*(scroll - position)/$winH;
                     if (scroll > position) {
                         $('.open-close-sp-1').css({
                             left:-1*(30 + slide) + '%'
