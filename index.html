@@ -90,7 +90,7 @@
 				</div>
 				<div class="before-header-ci"></div>
                 <img class="header-logo-img" src="birome-staitonery.png">
-				<img class="header-logo-img-sp" src="birii.png">
+				<img class="header-logo-img-sp" src="biti.png">
                 <div class="reachmaikeru"></div>
                 <img class="header-instagram" src="instagram.webp">
             </div>
@@ -125,11 +125,13 @@
                       $(".header-bottom-sp").animate({"width":"toggle"});
                       if(t==1){
                           $(".point-2-sp").css("width","0");
-                          $(".point-1-sp").css("transform","rotate(35deg)");
-                          $(".point-3-sp").css("transform","rotate(-35deg)");
+						  $(".point-2-sp").css("border","none");
+                          $(".point-1-sp").css("transform","rotate(46deg)");
+                          $(".point-3-sp").css("transform","rotate(-46deg)");
                           t=2;
                       }else{
                           $(".point-2-sp").css("width","20px");
+						  $(".point-2-sp").css("border","1px solid");
                           $(".point-1-sp").css("transform","rotate(0deg)");
                           $(".point-3-sp").css("transform","rotate(0deg)");
                           t=1;
@@ -1044,6 +1046,7 @@
 									$(".section-2-sp").ready(function(){
 										var height = $(window).height();
 										$(".open-close-sp").height(height);
+										$(".moveing-part").height(2*height);
 									})
 								});
 								

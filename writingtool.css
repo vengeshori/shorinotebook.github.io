@@ -3318,7 +3318,7 @@
 	.sp-point-sp{
         position:fixed;
         padding:0;
-        top:37px;
+        top:31px;
         transition:.3s;
         transform:scaleY(.7);
         z-index:100000005;
@@ -3330,6 +3330,7 @@
 		background-color:rgba(204,204,204,.8);
 		border-radius:0 8px 0 0px;
     }
+	
     .sp-point-sp:hover{
         cursor:pointer;
     }
@@ -3338,7 +3339,7 @@
         height:2px;
         background-color:white;
         padding:0;
-        margin:3px 0;
+        margin:5px 0;
         transition:.3s;
 		border:1px solid;
     }
@@ -3356,7 +3357,6 @@
         transform-origin:0% 50% 0;
         transform:rotate(0);
     }
-	
     .header-logo-img{
 		display:none;
     }
@@ -3365,8 +3365,9 @@
 		max-width:200px;
 		background-color:rgba(14,14,14,.6);
 		border-radius:20px;
-		padding:0 10px;
+		padding:0 20px;
 		padding-top:4px;
+		padding-bottom:4px;
 	}
     .reachmaikeru{
         display:none;
@@ -3731,7 +3732,7 @@
     }
     .content-3-caran-title-logo{
         position:absolute;
-        z-index:9999;
+        z-index:999;
         width:31%;
         top:50%;
         left:50%;
@@ -3943,7 +3944,7 @@
         height:30vh;
         position:sticky;
         top:15vh;
-        z-index:1000;
+        z-index:900;
     }
     .body-sp{
         height:55vh;
@@ -4962,7 +4963,6 @@ box-shadow: inset 14.71px 14.71px 23px #D6D8DC, inset -14.71px -14.71px 23px #FF
     .moveing-part{
         width:100%;
         position:relative;
-        height:200vh;
     }
     .open-close-sp{
         position:relative;
@@ -5059,7 +5059,7 @@ box-shadow: inset 14.71px 14.71px 23px #D6D8DC, inset -14.71px -14.71px 23px #FF
         position:sticky;
         top:0;
         background-color:rgba(245,245,245,.6);
-        z-index:1000;
+        z-index:900;
         margin:auto;
         text-align:center;
         font-family:serif;
