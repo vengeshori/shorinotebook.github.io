@@ -40,6 +40,10 @@ document.addEventListener('DOMContentLoaded', function () {
         	});
 			$(".header-bottom-sp-choice-1 ul a").on("click",function(){
 				$(".header-bottom-sp").animate({"width":"toggle"});
+				$(".point-2-sp").css("width","20px");
+				$(".point-2-sp").css("border","1px solid");
+				$(".point-1-sp").css("transform","rotate(0deg)");
+				$(".point-3-sp").css("transform","rotate(0deg)");
 			});
 		});
         

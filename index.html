@@ -121,7 +121,7 @@
                   $(".sp-point-sp").click(
                   function(){
                       $(".header-bottom-sp").animate({"width":"toggle"});
-                      if(t==1){
+                      if($(".point-2-sp").css("width") == "20px"){
                           $(".point-2-sp").css("width","0");
 						  $(".point-2-sp").css("border","none");
                           $(".point-1-sp").css("transform","rotate(46deg)");
