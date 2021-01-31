@@ -1043,7 +1043,7 @@
                         <div class="moveing-part"><!--開閉部分-->
 							<script>
 								$(function(){
-									$(".section-2-sp").ready(function(){
+									$("body").each(function(){
 										var height = $(window).height();
 										$(".open-close-sp").height(height);
 										$(".moveing-part").height(height);

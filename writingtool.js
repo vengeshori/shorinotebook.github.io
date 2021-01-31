@@ -201,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
         
         /*画面の移動に伴う開閉*/
         $(function() {
-            $('.section-2-sp').each(function() {
+            $('.content-3').each(function() {
                 var $win = $(window),
                     $winH = $win.height(),
                     $connect = $('.moveing-part'),
