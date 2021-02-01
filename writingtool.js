@@ -1013,7 +1013,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     };
                     intmain = 22 - ($(window).scrollTop() - $('.content-3-pel-title').offset()
                         .top) * (0.10);
-					intmainin = intmain *($winH/900);
+					intmainin = intmain *($winH/880);
                     if (intmainin < -32.8) {
                         intmainin = -32.8;
                     }

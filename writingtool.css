@@ -1711,7 +1711,7 @@
     }
     .pel-nonemove-line{
         position:sticky;
-        top:200px;
+        top:20%;
         width:1440px;
         height:640px;
         transition:.5s;
@@ -3668,7 +3668,7 @@
         padding:0 10%;
         position:relative;
         margin-top:30px;
-        padding-bottom:30px;
+        padding-bottom:80px;
     }
     .logos img{
         width:150px;
@@ -3681,7 +3681,7 @@
         margin:0;
         width:80%;
         display:inline-block;
-        margin-top:50px;
+        margin-top:80px;
         line-height:1.3;
         font-family: 'Rubik', sans-serif;
         letter-spacing:2px;
@@ -4136,7 +4136,7 @@
 		background-size:auto 70vh;
 		background-position:12% center;
 		background-repeat:no-repeat;
-		background-image:url(pel-nonemove-pen-sp.webp) !important;
+		background-image:url(pel-nonemove-pen-sp.png) !important;
 		
 	}
     .pelikan-main-pen-1-sp div{
@@ -4183,7 +4183,7 @@
 		background-attachment: fixed;
 		background-size:auto 70vh;
 		background-repeat:no-repeat;
-		background-image:url(pelikan-green-sp.webp);
+		background-image:url(pelikan-green-sp.png);
 		
 	}
     .pelikan-main-pen-2-sp div{
