@@ -997,14 +997,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         };
                         if (scroll + ($winH / 2) > position1) {
                             $('.pel-nonemove-line img').css({
-                                right: (current + 200)*120/1440 + '%'
+                                right: ((current + 200)*100/1440)*(1000/$winH) + '%'
                             });
                             $('.pelikan-nonemove-pic-2').css({
-                                right: (current + 150)*120/1440 + '%'
+                                right: ((current + 150)*100/1440)*(1000/$winH) + '%'
                             });
                             $('.pel-nonemove-line').css('opacity', '1');
                             $('.pelikan-nonemove-sono2').css({
-                                opacity: 1 - current / (800)
+                                opacity: 1 - current / (10800)
                             });
                         } else {
                             $('.pel-nonemove-line').css('opacity', '0');
@@ -1013,10 +1013,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     };
                     intmain = 22 - ($(window).scrollTop() - $('.content-3-pel-title').offset()
                         .top) * (0.10);
-                    if (intmain < -32.8) {
-                        intmain = -32.8;
+					intmainin = intmain *($winH/900);
+                    if (intmainin < -32.8) {
+                        intmainin = -32.8;
                     }
-                    rotate($(".pel-nonemove-line img"), intmain);
+                    rotate($(".pel-nonemove-line img"), intmainin);
                 });  
             });
         });

@@ -925,10 +925,10 @@
 	/*pcmakerpr*/
 	.pc-make-pr{
 		position:relative;
-		text-align:center;
 	}
 	.pc-pr-fi{
 		width:1000px;
+		margin:0 220px;
 	}
 	.pc-make-pr h1{
 		font-size:25px;
