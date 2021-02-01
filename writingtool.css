@@ -3440,7 +3440,7 @@
 		text-align:left;
 		margin-top:70px;
 		margin-left:70px;
-		font-size:23px;
+		font-size:20px;
     }
     .header-bottom-sp-choice-1 a{
         background-color:;
@@ -3449,7 +3449,7 @@
         color:darkslategray;
 		display:block;
 		width:200px;
-		padding-bottom:7px;
+		padding-bottom:0px;
     }
     .header-bottom-sp-choice-1 a:hover{
         cursor:pointer;
@@ -4268,21 +4268,20 @@
     .pelikan-sp-sp{
         width:100%;
         position:relative;
-        height:90vh;
         background-color:rgba(0,0,0,.06);
         padding:0;
         overflow:hidden;
     }
     .pelikan-sp-price-title-sp{
-        position:absolute;
+        position:relative;
         width:100%;
         right:1px;
         left:1px;
         margin:0;
-        top:calc((23vh - 50px)/4);
-        height:37vh;
         text-align:center;
         color:rgba(0,0,0,.7);
+		margin-top:120px;
+		margin-bottom:50px;
     }
     .pelikan-sp-price-title-sp h1{
         font-family:inherit;
@@ -4290,7 +4289,7 @@
         font-weight:1;
         line-height:1.1;
         width:100%;
-        margin-top:8vh;
+        margin-top:20px;
         margin-bottom:50px;
     }
     .pelikan-sp-price-title-sp h1 span{
@@ -4612,7 +4611,10 @@
     
     
     
-    
+	.pelikan-botom-sp-over{
+		position:relative;
+		height:230px;
+	}
     
     
     
@@ -4625,7 +4627,6 @@
         position:absolute;
         color:rgba(0,0,0,.5);
         background:transparent;
-        top:calc((127vh - 50px)/2);
         left:calc((100% - 250px)/3);
 		margin-top:20px;
     }
@@ -4676,7 +4677,6 @@
         position:absolute;
         color:rgba(0,0,0,.5);
         background:transparent;
-        top:calc((127vh - 50px)/2);
         right:calc((100% - 250px)/3);
         background: #EEF0F4;
         border-radius: 50px;
@@ -4710,7 +4710,7 @@
         height:50px;
         border-radius:50px;
         position:absolute;
-        top:calc((127vh - 50px)/2);
+
         right:calc((100% - 250px)/3);
         border:1px solid rgba(0,0,0,0.07);
 		margin-top:20px;
