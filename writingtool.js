@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (scroll > target - windowHeight) {
                         $(this).css('opacity', '1');
                         $(this).css('transform', 'translateY(0)')
-                        console.log("intmain")
+                        console.log("intmain");
                     }
                 });
             }
@@ -236,9 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         $(".open-close-sp-2").css("right","-30%");
                         $(".moving-text").css("opacity","0");
                     };
-                    
                 });
-                
             });
         });
         
@@ -317,7 +315,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 $(".information-main-sp").slideToggle();
             });
         });
-    
         
         
         
@@ -1279,5 +1276,3 @@ document.addEventListener('DOMContentLoaded', function () {
   checkBreakPoint(mql);
 	
 });
-
-/*はっかポイントに関しては後日確定させる*/
