@@ -1,0 +1,1186 @@
+
+<!--
+人生初のweb制作~筆記具関連~
+アニメーション
+フレキシブル
+画面幅でpc spの切り替え時にjsを再読み込み
+
+-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>writing-tool</title>
+        <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="writingtool.css">
+        <link rel="stylesheet" href="swiper3.css">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Sawarabi+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Allura&family=Nanum+Myeongjo&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Arapey&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&display=swap" rel="stylesheet">
+        <script>
+            $(function() {
+                $('html,body').animate({ scrollTop: 0 }, '1');
+                var win = $(window).width();
+                
+				
+				
+				
+				var lastInnerWidth = window.innerWidth ;
+				window.addEventListener( "resize", function () {
+					if ( lastInnerWidth != window.innerWidth ) {
+						lastInnerWidth = window.innerWidth ;
+						var w = $(window).width(),
+							$winH = $(window).height(),
+							v = $(".content-3-caran-main-sp").offset().top,
+							scroll = $(window).scrollTop() + $winH;
+						if(scroll < v){
+							window.location = window.location;
+							console.log("abcd");
+						}
+					}
+				});
+            });
+        </script>	
+		
+		
+		
+		
+		
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177772866-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-177772866-1');
+        </script>
+		
+		
+		
+		
+		
+		
+        <script type="text/javascript" src="writingtool.js"></script>
+        <title>高級筆記具紹介</title>
+        <meta name="format-detection" content="telephone=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="高級筆記具をはじめとする世界的な筆記具メーカーの商品を紹介しています">
+        <meta name="keywords" content="伊藤匠理 高級筆記具 ボールペン ファーバーカステル ">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+        
+        
+        
+        
+        
+        
+        
+        
+        
+		
+  </head>
+    <body>
+        <header>
+            <div class="header-logo">
+				<div class="sp-point-sp"><!--メニューバー開閉用ボタン-->
+                  <p class="point-1-sp"></p>
+                  <p class="point-2-sp"></p>
+                  <p class="point-3-sp"></p>
+				</div>
+				<div class="before-header-ci"></div>
+                <img loading="lazy" loading="lazy" class="header-logo-img" src="biti.png">
+				<img loading="lazy" loading="lazy" class="header-logo-img-sp" src="biti.png">
+                <img loading="lazy" loading="lazy" class="header-instagram" src="instagram.webp">
+				<div class="insta">
+                    <a href="#"><img loading="lazy" src="instagram.webp"></a>
+                </div>
+            </div>
+            
+            <div class="header-bottom"><!--pc用-->
+                <div class="under-logo">
+                    
+                    <a class="writing under-logo-a">筆記具</a>
+                    <a class="another under-logo-a">その他</a>
+                </div>
+                <div class="header-choice-1">
+                    <a href="#tocarandache">Carand'ache</a>
+                    <a href="#tofabercastell">Faber-castell</a>
+                    <a href="#topelikan">Pelikan</a>
+                    <a href="#towatermanuni">Waterman</a>
+                    <a href="#towatermanuni">Uni</a>
+                </div>
+                <div class="header-choice-2">
+                    <a href="#topencase">ペンケース</a>
+                    <a href="#tonotebook">ノート</a>
+                </div>
+            </div>
+			<script>/*sp用のtoggleメニューバー*/
+              $(function(){
+				  var t=1;
+                  $(".header-bottom-sp").hide();
+                  $(".sp-point-sp").click(
+                  function(){
+                      $(".header-bottom-sp").animate({"width":"toggle"});
+                      if($(".point-2-sp").css("width") == "20px"){
+                          $(".point-2-sp").css("width","0");
+						  $(".point-2-sp").css("border","none");
+                          $(".point-1-sp").css("transform","rotate(46deg)");
+                          $(".point-3-sp").css("transform","rotate(-46deg)");
+                          t=2;
+                      }else{
+                          $(".point-2-sp").css("width","20px");
+						  $(".point-2-sp").css("border","1px solid");
+                          $(".point-1-sp").css("transform","rotate(0deg)");
+                          $(".point-3-sp").css("transform","rotate(0deg)");
+                          t=1;
+                      }
+                  });
+              });
+			</script>
+            <div class="header-bottom-sp"><!--sp用-->
+                <div class="header-bottom-sp-choice-1">
+					<a class="header-ball-point" href="#">ボールペン　　<p class="sppon-1 sppon">&#9663;</p></a>
+					<div class="header-bottom-sp-choice-2-pen">
+						<ul>
+							<li><a href="#faber-sp">Graf von faber castell</a></li>
+                        	<li><a href="#caran-sp">Caran d'ache</a></li>
+                        	<li><a href="#pelikan-sp">Pelikan</a></li>
+                        	<li><a href="#water-uni-sp">Waterman</a></li>
+                        	<li><a href="#water-uni-sp">Uni</a></li>
+                    	</ul>
+                	</div>
+                    <a class="header-pencase" href="#">ペンケース　　<p class="sppon-2 sppon">&#9663;</p></a>
+					<div class="header-bottom-sp-choice-2-pencase">
+                    	<ul>
+                        	<li><a href="#pencase-sp">革製ペンケース</a></li>
+                    	</ul>
+                	</div>
+                    <a class="header-note" href="#">ノート　　<p class="sppon-3 sppon">&#9663;</p></a>
+					<div class="header-bottom-sp-choice-2-note">
+                    	<ul>
+                        	<li><a href="#note-sp">ノート&amp;ペン</a></li>
+                    	</ul>
+                	</div>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="content-1">
+                <div class="content-img-1">
+                    <div class="swiper-container slider1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img loading="lazy" loading="lazy" class="img1" src="content-1-img-7.webp" alt="Swiper01">
+                                <img loading="lazy" class="img1-1" src="sp-slide-1.webp" alt="Swiper01">
+                                <div class="img1-1-1">
+                                    
+                                    <p><span class="faber-slider">Graf von Faber-Castell</span><br>classic collection pernambuco<br><span class="jinu">クラシックコレクション ペルナンブーコ</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" class="img1" src="10-ecridor.webp" alt="Swiper03">
+                                <img loading="lazy" class="img1-1" src="sp-slide-2.webp" alt="Swiper03">
+                                <div class="img1-1-2">
+                                    <p><span class="caran-slider">Caran d'Ache</span><br>ecridor venetian<br><span class="jinu"> エクリドール ベネシアン</span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" class="img1" src="content-1-img-6.webp" alt="Swiper05">
+                                <img loading="lazy" class="img1-1" src="sp-slide-3.webp" alt="Swiper05">
+                                <div class="img1-1-3">
+                                    <p><span class="caran-slider">Pelikan</span><br>souverän m400<br><span class="jinu">スーべレーンM400 </span></p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <img loading="lazy" class="img1" src="content-1-img-5.webp" alt="Swiper06">
+                                <img loading="lazy" class="img1-1" src="sp-slide-4.webp" alt="Swiper06">
+                                <div class="img1-1-4">
+                                    <p><span class="pel-slider">Caran d'Ache</span><br>ecridor&amp;leman<br><span class="jinu">エクリドール&amp;レマン</span></p>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <div class="swiper-pagination swiper-pagination-white swi-bull-po"></div>
+                        
+                    </div>
+                    <script src="swiper.js"></script>
+                    <script>
+                        var slider1 = new Swiper('.slider1', {
+                           
+                            loop: true,
+                            pagination:{
+                                 el: '.swiper-pagination',
+                                type: 'bullets',
+                                clickable: true
+                            },
+                            keyboard: {
+                                 enabled: true,
+                                 onlyInViewport: false,
+                            },
+                            autoplay: {
+                                delay: 4000,
+                                disableOnInteraction: false,
+                                speed:5000,
+                            },
+                            effect:'fade',
+                        });
+                    </script>
+                </div>
+                
+            </div>
+            
+            <div class="before-testsace-sp"><!--spだけ表示-->
+                <div class="before-testcase-sp-title">
+                    <a name="pen-section-sp"></a>
+                    <!--<div class="top-h1">
+                        <div class="top-h1-1">
+                            <span>Top&nbsp;&nbsp;&gt;&nbsp;&nbsp;</span>Grobal Manufacturer&nbsp;
+                        </div>
+                    </div>-->
+                    <!--<h1>高品質な筆記具を発信し続けるブランドとして世界的に名前が知られているメーカー< /h1>-->
+					<h1>その姿はまるで芸術品<br>魅せる筆記具</h1>
+                    <p>たまにはいつものよりもちょっと質のいい筆記具を使ってみたいと思ったことはありませんか. そんな時にあなたの要望に完璧かそれ以上に答えてくれる筆記具を生み出しているメーカーが世界に目を向けるとたくさんあります. その中から以下の5社に注目して、高級筆記具の価値はどのようにして考えられているのかみていきます.</p>
+                    <div class="logos">
+                        <img loading="lazy" src="caran-logo.png">
+                        <img loading="lazy" class="img-fab" src="graf-von-faber-logo.png">
+                        <img loading="lazy" src="uni-logo.png">
+                        <img loading="lazy" src="waterman-logo.webp">
+                        <img loading="lazy" src="pelikan-logo-2.png">
+                    </div>
+                    
+                </div>
+            </div>
+			<div class="pc-make-pr"><!--pcだけ-->
+				<img loading="lazy" class="pc-pr-fi" src="faber-pen-sp-1.webp">
+				<div class="blur"></div>
+				<h1>その姿はまるで芸術品<br>魅せる筆記具</h1>
+				<p class="pc-make-pr-p">たまにはいつものよりもちょっと質のいい筆記具を使ってみたいと思ったことはありませんか. <br>そんな時にあなたの要望に完璧かそれ以上に答えてくれる筆記具を生み出しているメーカーが世界に目を向けると数多くあります. その中から5社に注目して、高級筆記具の価値はどのようにして考えられているのか見ていきます.<br>最後にはそれらの筆記具に相応なペンケースなどを紹介しています.</p>
+				<div class="pc-pr-1">
+					<img loading="lazy" src="">
+					<p></p>
+					<img loading="lazy" src="">
+				</div>
+			</div>
+            <div class="test-case-1"><!--pc sp 両方-->
+            <!--メーカーごとにペンの紹介-->
+                <!--<div class="sukima-title1">--pcだけ表示-->
+                    <!--<p class="sukima-title-1">Section1</p>
+                    <p class="sukima-title-3">step-2</p>
+                    <p class="sukima-title-2">筆記具には色々な物語が隠れています<br>例えばデザインであったり、使用する素材などには何があるのでしょうか</p>
+                </div>-->
+                <div class="content-3">
+                    <div class="before-caran"><!--spだけ-->
+                        <h1>カランダッシュ<br>Caran d'Ache</h1>
+                        <p>スイスで1915年に創業された鉛筆工場が前身.現在も創業当時のままスイスに本部がある.自然の風景などをコンセプトにした筆記具のデザインを得意とするメーカー.近年では同社が得意とする色鉛筆などの画材分野の技術を高級筆記具関連に用いて色鮮やかな製品を生み出している</p>
+                    </div>
+                    <div class="content-3-caran">
+                        <a name="tocarandache"></a>
+                        <div class="content-3-caran-title">
+                            <img loading="lazy" class="content-3-caran-title-back" src="caran-bacl.webp"><!--pcだけ-->
+                            <img loading="lazy" class="content-3-caran-title-back-sp" src="caran-title-back-sp.webp"><!--spだけ-->
+                            <img loading="lazy" class="content-3-caran-title-logo" src="caran-logo.png">
+                        </div>
+                        <div class="content-3-caran-main"><!--pcだけ-->
+                            <div class="content-3-caran-main-leman">
+                                <div class="content3-caran-move-img-leman">
+                                    <img loading="lazy" class="move-leman transport" src="image3.webp">
+                                    <div class="point-1"></div>
+                                    <div class="point-10 transport10"></div>
+                                </div>
+                                <div class="content3-caran-nonemove-leman">
+                                    <div class="leman-title-none">
+                                        <h2>LEMAN</h2>
+                                        <p>GRAND BLEU</p>
+                                    </div>
+                                    <div class="background1"></div>
+                                    <div class="leman-main-none">
+                                        <h3>デザイン</h3>
+                                        <p><span class="leman-none-span">ジュネーブ</span>の<span class="leman-none-span">レマン湖</span>に映る<br>光や時間とともに変化する美しい風景を<br>画材で培った色彩技術を駆使し表現した<br>物が、レマンコレクションです.</p>
+                                        <p>中でも "レマン グランブルー" は<br>レマン湖でまばゆいばかりの光の中で<br>時間とともに変化する波を生き生きと<br>表現しています.</p>
+                                        <br>
+                                        <h3>胴軸とクリップ</h3>
+                                        <p>真鍮の軸にギロシェ彫刻を施し、<br>表面にラッカーコーティングを<br>熟練した職人がすることで<br>デザインを表現しています.<br>ロジウムにシルバーコーティングした<br>クリップはバネが内蔵されていて<br>高い操作性を実現しています.</p>
+                                    </div>
+                                    <img loading="lazy" class="shadow" src="shadow.png">
+                                    <img loading="lazy" class="shadow-2" src="shadow.png">
+                                    <img loading="lazy" class="leman-shadow" src="leman-shadow.png">
+                                    <div class="price-1-1 productprice">価格を表示する</div>
+                                    <div class="price-1-2">¥74,800(税別)</div>
+                                </div>
+                            </div>
+                            <div class="content-3-caran-main-ecridor">
+                                <div class="content3-caran-move-img-ecridor">
+                                    <img loading="lazy" class="move-ecridor transport" src="caran-ecridor-apa.png">
+                                    <div class="point-1"></div>
+                                </div>
+                                <div class="content3-caran-nonemove-ecridor">
+                                    <div class="ecridor-title-none">
+                                        <h2>ECRIDOR</h2>
+                                        <p>VENETIAN</p>
+                                    </div>
+                                    <div class="ecridor-main-none">
+                                        <h3>デザイン</h3>
+                                        <p>何十年もの時を超越して現在もとても人気のある特徴的で象徴的な6角形のボディに彫刻を施すデザインを持つのが、<br>このエクリドールコレクションです.</p>
+                                        <p>そして、このVENETIAN(ベネシアン)は<br>サマーエディションの日本限定モデルで<br>ベネツィア夏のさざ波をイメージした<br>温かみのある彫刻が施されています<br></p>
+                                        <h3><br>胴軸とインク</h3>
+                                        <p>銀の軸にロジウムコーティングをした胴軸に彫刻をしています.胴軸は純銀か真鍮にシルバープレートのどちらかを選択することができます.<br>インクは"ゴリアット"と名付けられたダイヤモンドの次に硬度があるといわれるタングステンカーバイドの鋼球を内蔵した滑らかで名高いものを使用しています</p>
+                                    </div>
+                                    <div class="background2"></div>
+                                    <img loading="lazy" class="shadow1" src="shadow.png">
+                                    <img loading="lazy" class="shadow1-2" src="shadow.png">
+                                    <img loading="lazy" class="ecridor-shadow" src="ecridor-shadow.png">
+                                    <div class="price-2-1 productprice">価格を表示する</div>
+                                    <div class="price-2-2">¥26,400(税別)</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="content-3-caran-main-sp"><!--spだけ-->
+                            <div class="caran-leman-sp">
+                                <h1 class="fadeInAp-sp">LEMAN COLLECTION<br><span>LÉMAN GRAND BLEU Ballpoint Pen</span></h1>
+                                <img loading="lazy" class="leman-img-sp fadeInAp-sp" src="image2.webp">
+                                <p class="fadeInAp-sp">豊かで壮麗な色づかいと流れるような曲線が美しいレマン コレクション. 空、季節、湖岸沿いに続く命あるものの姿を鮮やかに映し出す、ジュネーブの入江に続く湖の水面の繊細な色合いを描き出しました. 光沢がありながらかすかにマット感も残すラッカーでシルエットを仕上げたこのペンはジュネーブに拠点を置くメゾンの独自のスタイルと専門技術の高さを感じさせます.</p>
+                                <img loading="lazy" class="leman-img-sp-1 fadeInAp-sp" src="imga5.webp">
+                                <h1 class="fadeInAp-sp">彫刻<br>engaving</h1>
+                                <p class="lemanp fadeInAp-sp">胴軸の中心部のリングにはカランダッシュのロゴやSWISS MADEが彫刻されています. クリップ部分にはシルバープレートとロジウムで加工されています。<span>leman grand blue</span>モデルはレマン湖でまばゆいばかりの光の中で時間とともに変化する波をイメージしたギロシェ彫刻が施されています. </p>
+                                <h1 class="fadeInAp-sp">値段<br>price</h1>
+                                <p class="price-sp fadeInAp-sp">&#165;74,800-</p>
+                            </div>
+                            <div class="caran-ecridor-sp fadeInAp-sp">
+                                <h1 class="ecridor-sp fadeInAp-sp">ECRIDOR COLLECTION<br><span class="caran-sp-2">ECRIDOR VENETIAN</span></h1>
+                                <img loading="lazy" class="caran-img-sp fadeInAp-sp" src="caran-ecridor-apa.png">
+                                <p class="fadeInAp-sp">何十年もの時を超越して現在もとても人気のある特徴的で象徴的な6角形のシルバーのボディに彫刻を施すデザイン. スイスクオリティを表す言葉であるエレガンス、堅牢性、信頼性そのものをエクリドールが体現しています。クラシカル、都会的、スポーティ、ロマンティックといった要素を全て兼ね備えているのがこのエクリドールコレクションです。</p>
+                                <img loading="lazy" class="ecridor-img-sp-1 fadeInAp-sp" src="image6.webp">
+                                <h1 class="fadeInAp-sp">胴軸<br>PEN BODY</h1>
+                                <p class="fadeInAp-sp">真鍮にシルバープレートとパラジウムコートをした胴軸に彫刻を施したものになっています. パラジウムコートをすることで金属の劣化を防ぐので銀のような輝きを長期間お手入れすることなく保つことができます。 パラジウムはここ数年で価値が急騰している貴金属で、プラチナよりも取引相場が高いと言われている素材です。</p>
+                                <h1 class="fadeInAp-sp">インク<br>ink cartridge</h1>
+                                <p class="fadeInAp-sp">"ゴリアット"と名付けられたダイヤモンドの次に硬度があるといわれるタングステンカーバイドの鋼球を内蔵した滑らかで名高いものを使用しています. インクの太さはL,M,Fから選択することができ、A4用紙600枚ほど書くことができます. </p>
+                                <h1 class="fadeInAp-sp">値段<br>price</h1>
+                                <p class="price-sp fadeInAp-sp">&#165;26,400-</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="before-faber"><!--spだけ-->
+                        <a name="faber-sp"></a>
+                        <h1>ファーバーカステル伯爵コレクション<br>Graf von Faber-Castell</h1>
+                        <p>ドイツのファーバー伯爵家が創業した世界最古の筆記具メーカーブランド.画材などを主に扱っているファーバーカステル社の中で最高級筆記具ラインがこの伯爵コレクション. 木材と貴金属のハーモニーが美しい筆記具を数多く生み出している. </p>
+                    </div>
+                    <div class="content-3-faber"><!--PCだけ-->
+                        <a name="tofabercastell"></a>
+                        <div class="content-3-faber-title"><!--写真タイトル--><!--top:0;-->
+                            <img loading="lazy" class="content-3-faber-title-img" src="grafvon-faber-back.webp">
+                            <img loading="lazy" class="content-3-faber-title-logo" src="graf-von-faber-logo.png">
+                        </div>
+                        <div class="content-3-faber-nonemove"><!--sticky内容--><!--top:0px;-->
+                            <img loading="lazy" class="classic-body" src="classic-body-5.png"><!--本体-->
+                            <div class="fab-nonemove-1"><!--キャップ-->
+                                <img loading="lazy" class="classic-cap" src="classic-cap-7.png">
+                            </div>
+                        </div>
+                        <div class="content-3-faber-main"><!--メイン内容--><!--top:467px;-->
+                            <div class="faber-nonemove-title faberappear">
+                                <h2>GRAF VON FABER-CASTELL</h2><h3>ROLLERBALL PEN CLASSIC PERNAMBUCO</h3>
+                                <p>クラシックコレクション ペルナンブコ プラチナコーティング ローラーボール</p>
+                            </div>
+                            <div class="faber-nonemove-content1 faberappear">
+                                <h3>クラシックコレクションの魅力</h3><p>温かみのあるナチュラルなウッド素材と涼感漂うエレガントなプラチナコーティングのユニークな融合が深い魅力を感じさせます。ペルナンブコなど、コレクションに使用される木軸素材は伯爵コレクションの特徴ともいえるリブ模様とプラチナコーティングパーツとの絶妙なコンビネーションを生んでいます。</p>
+                            </div>
+                            <div class="faber-nonemove-content2 faberappear">
+                                <h3>"木"という選択</h3>
+                                <p>世界に一つとして同じ物が存在しない素材、それが木です。<br>使用し、時間が経過していくに連れて新たな光沢やグリップ感などが生まれていきます。そうすることで単に購入するだけでは手に入らない自分だけのこの世に二つと無い専用の筆記具が時間をかけて完成していくのです。"木"という素材の魅力はそこにあります。<br>買ったはいいもののあまりにも高価すぎて日常使いできない、と考える人もいるかもしれません。しかし、日常使いすることによって軸が手に馴染んでいき更には多少の指先の油分によって表面の劣化を防ぐことになります。逆に言えば、放置しすぎていると木が乾燥してひび割れの原因になることもあるのでそこは注意すべきポイントです。<br>と言っても木軸が割れる、欠けるということは滅多に怒ることではないので使用に際して神経質になる必要は全くありません。<br>
+                                要するに、使っていく中で深く考えずに色や手触りの変化をただ楽しむことができる素材、それが"木"なのです。</p>
+                                <div class="price-3-1 productprice">価格を表示する</div>
+                                <div class="faber-url-1">買いに行く</div>
+                                <div class="price-3-2">¥55,000(税別)</div>
+                                <div class="faber-url-2"><a href="#">外部サイトへ飛びます</a></div>
+                                <div class="faber-cover-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content-3-faber-sp"><!--spだけ-->
+                        <div class="content-3-faber-title-sp">
+                            <img loading="lazy" class="faber-title-sp" src="faber-back-sp.webp">
+                            <img loading="lazy" class="faber-title-logo-sp" src="graf-von-faber-logo.png">
+                        </div>
+                        <div class="faber-main-text-sp">
+                            <h3 class="fadeInAp-sp">Classic collection</h3>
+                            <h1 class="fadeInAp-sp">Rollerball pen Classic Pernambuco</h1>
+                            <p class="fadeInAp-sp">温かみのあるナチュラルなウッド素材と涼感漂うエレガントなプラチナコーティングのユニークな融合が深い魅力を感じさせます。ペルナンブコなど、コレクションに使用される木軸素材は伯爵コレクションの特徴ともいえるリブ模様とプラチナコーティングパーツとの絶妙なコンビネーションを生んでいます。</p>
+                        </div>
+                        <div class="faber-main-sp">
+                            <div class="faber-cap-sp">
+                                <img loading="lazy" class="cap-sp fadeInAp-main-sp" src="classic-cap-7.png">
+                            </div>
+                            <img loading="lazy" class="body-sp fadeInAp-main-sp" src="classic-body-5.png">
+                            <img loading="lazy" class="fab-sh-sp fadeInAp-sp-for-shadow" src="fab-shadow-sp.png">
+                        </div>
+                        <div class="faber-last-sp">
+                            <h1 class="fadeInAp-sp">"木"という選択</h1>
+                            <p class="fadeInAp-sp">世界に一つとして同じ物が存在しない素材、それが木です。使用し、時間が経過していくに連れて新たな光沢やグリップ感などが生まれていきます。自分だけのこの世に二つと無い専用の筆記具が時間をかけて完成していくのです。買ったはいいもののあまりにも高価すぎて日常使いできない、と考える人もいるかもしれません。しかし、日常使いすることによって軸が手に馴染んでいき更には多少の指先の油分によって表面の劣化を防ぐことになります。
+                            </p>
+                        </div>
+                        <img loading="lazy" class="faber-pen-1-sp fadeInAp-sp" src="faber-pen-note-sp.webp">
+                        <div class="fab-under-last-sp">
+                            <h1 class="fadeInAp-sp">デザイン <span>&amp;</span> 機能性<br><span>design &amp; functionality</span></h1> 
+                            <p class="fadeInAp-sp">バイオリンの弓に通常使用されるほど硬く耐久性のある木材から作られる胴軸は唯一無二な木目や色を纏っています. 世界中の人々を魅了しているプラチナの美しい輝きと温かみのある木目から生み出される洗練されたデザインは貴方の心も掴むことでしょう. さらにバネ式のクリップなど複雑な機構によって高い機能性を実現しています. </p>
+                        </div>
+                        <div class="faber-price-sp">
+                            <h1 class="fadeInAp-sp">値段<br><span>price</span></h1>
+                            <p class="fadeInAp-sp">&#165;55,000-</p>
+                        </div>
+                    </div>
+                    <div class="before-pel"><!--スマホだけ-->
+                        <a name="pelikan-sp"></a>
+                        <h1>ペリカン<br>Pelikan</h1>
+                        <p>スイスにある筆記具ブランドでドイツ人がインク工場を始めたのが起源. 現在の業態に変化した当初に発売されたモデルが今でもその高い人気から看板商品として販売され続けている.</p>
+                    </div>
+					
+                    <div class="content-3-pel"><!--PCだけ-->
+                        <a name="topelikan"></a>
+                        <div class="content-3-pel-title"><!--写真タイトル-->
+                            <img loading="lazy" class="content-3-pel-title-img" src="pel-title-5.webp">
+                            <img loading="lazy" class="content-3-pel-title-logo" src="pelikan-logo-2.png">
+                            <div class="pel-title-img-back"></div>
+                        </div>
+                        <div class="point-pel-1"></div><!--アニメーションポイント-->
+                        <div class="point-pel-2"></div><!--アニメーションポイント-->
+                        <div class="content-3-pel-main"><!--pelのメインの親要素これがposition:relative;-->
+                            <div class="pel-nonemove"><!--動かない方 z-index 10-->
+                                <div class="pel-nonemove-line">
+                                    <img loading="lazy" class="pelikan-pen-1" src="pel-nonemove-pen.webp">
+                                    <img loading="lazy" class="pelikan-pen-2" src="pelikan-green.webp">
+                                </div>
+                            </div>
+                            <div class="pel-move"><!--動く方 z-index 20-->
+                                <div class="pelikan-main-title">
+                                    <h1>Pelikan Souverän</h1>
+                                    <p>Since 1950</p>
+                                    <h3>色を選択する</h3>
+                                    <a class="pelikan-button-blue"><img loading="lazy" src="pelikan-mark-blue.webp"></a>
+                                    <a class="pelikan-button-green"><img loading="lazy" src="pelikan-mark-green.webp"></a>
+                                    <img loading="lazy" class="pensaki-1" src="pensaki.webp">
+                                    <img loading="lazy" class="pensaki-2" src="pensaki.webp">
+                                    <img loading="lazy" class="circle-1" src="circle.png">
+                                    <img loading="lazy" class="circle-2" src="circle.png">
+                                </div>
+                                <div class="pelikan-main-title-1"></div>
+
+                        
+                                <div class="pelikan-main-paragraph pelikanappear">
+                                    
+                                    <h3>長い歴史</h3>
+                                    <p><span class="longyear">1950年</span>に発売されたモデル400のストライプ模様はペリカンブランドのシンボルとして世に知られるようになりました。<br>以降、70年の間姿を変えることなく今現在発売<br>されているモデルがこの<span class="longyear">Souveran</span>です。</p>
+                                </div>
+                                <div class="pelikan-main-paragraph-1 pelikanappear">
+                                    <h3>高い技術</h3>
+                                    <p>同軸の製造には極めて精密な作業が求められます。ペリカン社の為に特別に製造されたコットン製の素材から多くの製造工程を経て完成品となります。例えば、まるめられて同軸の形状にされたり、ダイヤモンドカットの研磨で磨き上げられます。次に、特徴ある二重リングを胴軸とキャップにはめ込みます。この工程ではつなぎ目を全く見えないようにするために非常に精密な作業が要求されます。そして光沢が出るまで表面が磨き上げられ、次にペリカンのくちばしをモチーフにしたクリップが取り付けられます。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="pelikan-sp"><!--spだけ-->
+                        <div class="pelikan-title-sp">
+                            <img loading="lazy" class="pelikan-title-img-1-sp" src="pelikan-title-sp.webp">
+                            <img loading="lazy" class="pelikan-title-img-2-sp" src="pelikan-logo-2.png">
+                        </div>
+                        <div class="pelikan-main-sp">
+                            <div class="pelikan-main-pen-1-sp"><!--bkue pelikan-sp-->
+                                <div>
+                                    <h1>Souverän<br><span>since 1950</span></h1>
+                                    <p>1950年に発売されたモデル400のストライプ模様はペリカンブランドのシンボルとして世に知られるようになりました。以降、70年の間姿を変えることなく今現在発売されているモデルがドイツ語で"優れもの"の意味を持つSouveranです。</p>
+                                </div>
+                                 
+                            </div>
+                            <div class="pelikan-main-pen-2-sp"><!--grern pelikan-->
+                                <div>
+                                	<h1>高い技術<br><span>since 1950</span></h1>
+                                    <p>ペリカン社の為に特別に製造されたコットン製の素材から多くの製造工程を経て完成品となります。高度で繊細な作業によって特徴ある二重リングを胴軸とキャップに狂いなく組込まれるのです。</p>
+                                </div>
+                            </div>
+                            <!--<div class="pelikan-model-sp">
+                                <h1>モデル別のサイズ<br><span>size</span></h1>
+                                <p class="pelikan-sps-sps-sp">Souveranは軸の長さと径が異なる3種類が用意されています.その時々の用途にあったモデルを選ぶことができます</p>
+                                <div class="pelikan-model-main-400-sp">
+                                    <h3>M400</h3>
+                                    <p>　　</p>
+                                </div>
+                                <div class="pelikan-model-main-600-sp">
+                                    <h3>M600</h3>
+                                    <p>　　</p>
+                                </div>
+                                <div class="pelikan-model-main-800-sp">
+                                    <h3>M800</h3>
+                                    <p>　　</p>
+                                </div>
+                            </div>-->
+                            <div class="pelikan-sp-sp">
+                                <div class="pelikan-sp-price-title-sp">
+                                    <h1>各モデル&amp;価格<br><span>model &amp; price</span></h1>
+									<p>(使い方)<br>モデル名横の&#165;をクリック<br>&darr;<br>下の&#165;をクリック</p>
+                                    <div class="model-ch-1-sp">
+                                        <div class="pelikan-bottom-sp-a">
+                                            <p>&#165;</p>
+                                            <div class="pelikan-bottom-sp-before-a"></div>
+                                            <div class="pelikan-bottom-sp-after-a"></div>
+                                        </div>
+                                        <div class="pelikan-bottom-sp-a-1">
+                                            <p>M400</p>
+                                            <div class="pelikan-test-a-sp"></div>
+                                        </div>
+                                        <div class="pelikan-test-sp"></div>
+                                    </div>
+                                    <div class="model-ch-2-sp">
+                                        <div class="pelikan-bottom-sp-b">
+                                            <p>&#165;</p>
+                                            <div class="pelikan-bottom-sp-before-b"></div>
+                                            <div class="pelikan-bottom-sp-after-b"></div>
+                                        </div>
+                                        <div class="pelikan-bottom-sp-b-1">
+                                            <p>M600</p>
+                                            <div class="pelikan-test-b-sp"></div>
+                                        </div>
+                                    </div>
+                                    <div class="model-ch-3-sp">
+                                        <div class="pelikan-bottom-sp-c">
+                                            <p>&#165;</p>
+                                            <div class="pelikan-bottom-sp-before-c"></div>
+                                            <div class="pelikan-bottom-sp-after-c"></div>
+                                        </div>
+                                        <div class="pelikan-bottom-sp-c-1">
+                                            <p>M800</p>
+                                            <div class="pelikan-test-c-sp"></div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="pelikan-botom-sp-over">
+									<div class="pelikan-bottom-sp">
+										<p>&#165;</p>
+										<div class="pelikan-bottom-sp-before"></div>
+										<div class="pelikan-bottom-sp-after"></div>
+									</div>
+									<div class="pelikan-bottom-sp-1">
+										<p class="r-none-sp">モデルを選択</p>
+										<p class="r400-sp">24,600  (税別)</p>
+										<p class="r600-sp">33,500  (税別)</p>
+										<p class="r800-sp">38,500  (税別)</p>
+									</div>
+									<div class="pelikan-bottom-sp-1-div"></div>
+								</div>
+                            </div>
+                        </div>
+                        <div class="pelikan-main-last-sp">
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    
+                    
+                    <div class="before-water-uni-sp"><!--spだけ-->
+                        <a name="water-uni-sp"></a>
+                        <h1>Waterman&amp;Uni</h1>
+                        <p>スイスにある筆記具ブランドでドイツ人がインク工場を始めたのが起源. 現在の業態に変化した当初に発売されたモデルが今でもその高い人気から看板商品として販売され続けている.</p>
+                    </div>
+                    <div class="water-uni-title-image"><!--spだけ-->
+                        <img loading="lazy" class="water-uni-sp-1" src="water-uni-title-image-1-sp.webp">
+                        <img loading="lazy" class="water-uni-sp-logo-1" src="waterman-logo.webp">
+                        <img loading="lazy" class="water-uni-sp-logo-2" src="uni-logo.png">
+                    </div>
+                    
+                    <div class="water-uni-sp"><!--spだけ--><!--main part-->
+                        <div class="water-main-text">
+                            <h1>WATERMAN HÉMISPHÈRE</h1>
+                            <p><span>made in France</span><br>Everything flows from the elegant slim shape. Features a dynamic combination of elements like the slim clip and broad ring, to enhance the distinctively narrow form.</p>
+                        </div>
+                        <div class="water-circle-sp">
+                            <img loading="lazy" class="water-circle-inner-sp" src="water-circle-1.webp">
+                        </div>
+                        <div class="water-under-circle-sp">
+                            <h1>Product lineup</h1>
+                            <div class="water-1-sp water-inline-sp">
+                                <div class="water--inline-sp-sp-sp fadeInAp-sp-1">
+                                    <img loading="lazy" src="water-pen-6.png">
+                                    <p><a href="#">BLACK BALLPOINT PEN CT</a></p>
+                                </div>
+                            </div>
+                            <div class="water-2-sp water-inline-sp">
+                                <div class="water--inline-sp-sp-sp fadeInAp-sp-1">
+                                    <img loading="lazy" src="water-pen-5.png">
+                                    <p><a href="#">BLACK BALLPOINT PEN GT</a></p>
+                                </div>
+                            </div>
+                            <div class="water-3-sp water-inline-sp">
+                                <div class="water--inline-sp-sp-sp fadeInAp-sp-1">
+                                    <img loading="lazy" src="water-pen-3.png">
+                                    <p><a href="#">STAINLESS STEAL BALLPOINT PEN GT</a></p>
+                                </div>
+                            </div>
+                            <div class="water-4-sp water-inline-sp">
+                                <div class="water--inline-sp-sp-sp fadeInAp-sp-1">
+                                    <img loading="lazy" src="water-pen-4.png">
+                                    <p><a href="#">STAINLESS STEAL BALLPOINT PEN CT</a></p>
+                                </div>
+                            </div>
+                            <div class="water-5-sp water-inline-sp">
+                                <div class="water--inline-sp-sp-sp fadeInAp-sp-1">
+                                    <img loading="lazy" src="water-pen-2.png">
+                                    <p><a href="#">WHITE BALLPOINT PEN CT</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="water-uni-sp-uni-sp"><!--spだけ--><!--main part-->
+                        <div class="water-uni-sp-uni-sp-top"></div>
+                        <div class="uni-main-text">
+                            <h1>Uni Pure-Malt</h1>
+                            <p>The natural wood grip made from 50 year old white oak from Japanese whisky barrels will have some variations in color and grain, as well as the possibility of small imperfections</p>
+                        </div>
+                        <div class="uni-main-image">
+                            <div class="uni-main-image-1">
+                                <img loading="lazy" src="pure-molt-1.webp" class="fadeInAp-sp-1">
+                                <p class="fadeInAp-sp-1"><a href="#">Jetstream 5 in 1</a></p>
+                            </div>
+                            <div class="uni-main-image-2">
+                                <img loading="lazy" class="fadeInAp-sp-1" src="unipuremalt1.png">
+                                <p class="fadeInAp-sp-1"><a href="#">Multifunction Pen 4 in 1</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                    <div class="content-3-water-uni"><!--pcだけ-->
+                        <a name="towatermanuni"></a>
+                        <div class="content-3-title">
+                            <img loading="lazy" class="water-uni-title" src="water-and-uni-title.webp">
+                            <img loading="lazy" class="water-logo-content3" src="waterman-logo.webp">
+                            <img loading="lazy" class="uni-logo-content3" src="uni-logo.png">
+                        </div>
+                        <div class="content-3-water">
+                            <div class="water-content-3-title">
+                                <h2>WATERMAN HÉMISPHÈRE</h2>
+                                <div class="tansu"></div>
+                                <p>Everything flows from the elegant slim shape. Features a dynamic combination of elements like the slim clip and broad ring, to enhance the distinctively narrow form.</p>
+                            </div>
+                            <a class="pen-1" href="https://www.waterman.com/en/hemisphere/166-black-ballpoint-pen-ct-3501170920572.html">BLACK BALLPOINT PEN CT</a>
+                            <a class="pen-2" href="https://www.waterman.com/en/hemisphere/162-black-ballpoint-pen-gt-3501170920671.html">BLACK BALLPOINT PEN GT</a>
+                            <a class="pen-3" href="https://www.waterman.com/en/hemisphere/178-stainless-steel-ballpoint-pen-gt-3501170920374.html">STAINLESS STEAL BALLPOINT PEN GT</a>
+                            <a class="pen-4" href="https://www.waterman.com/en/hemisphere/182-stainless-steel-ballpoint-pen-ct-3501170920473.html">STAINLESS STEAL BALLPOINT PEN CT</a>
+                            <a class="pen-5" href="https://www.waterman.com/en/hemisphere/158-white-ballpoint-pen-ct-3501170920978.html">WHITE BALLPOINT PEN CT</a>
+                            <div class="water-pens">
+                                <img loading="lazy" class="water-pen-1" src="water-pen-6.png">
+                                <img loading="lazy" class="water-pen-2" src="water-pen-5.png">
+                                <img loading="lazy" class="water-pen-3" src="water-pen-3.png">
+                                <img loading="lazy" class="water-pen-4" src="water-pen-4.png">
+                                <img loading="lazy" class="water-pen-5" src="water-pen-2.png">
+                            </div>
+                        </div>
+                        <div class="content-3-uni">
+                            <div class="uni-content3-title">
+                                <h2>uni Pure Malt</h2>
+                                <p class="p"></p>
+                                <p class="pp">The natural wood grip made from 50 year old white oak from Japanese whisky barrels will have some variations in color and grain, as well as the possibility of small imperfections</p>
+                                <div class="uni-content3-title1">
+                                    <a href="#">Jetstream 5 in 1</a>
+                                </div>
+                                <div class="uni-content3-title2">
+                                    <a href="#">Multifunction Pen 4 in 1</a>
+                                </div>
+                                <div class="float-del"></div>
+                            </div>
+                            <div class="float-del"></div>
+                            <img loading="lazy" class="uni-pen-img" src="unipuremalt1.png">
+                            <img loading="lazy" class="uni-pen-img-1" src="pure-molt-1.webp">
+                            <div class="uni-content3-para">
+                            </div>
+                        </div>
+                        <div class="float-del"></div>
+                    </div>
+                    <div class="before-section2"><!--pcだけ-->
+                        <div class="imac-sticky">
+                            <div class="hide-1"></div>
+                            <div class="hide-2"></div>
+                            <img loading="lazy" class="ipad-inner" src="moto-img-2.webp">
+                            <img loading="lazy" class="ipad" src="ipadpro-apa.png">
+                            <div class="ipad-sin"></div>
+                        </div>
+                    </div>
+                    <div class="section-2"><!--筆箱とか--><!--pcだけ-->
+                        <div class="pencase"><!--下2項目親要素-->
+                            <a name="topencase"></a>
+                            <div class="pencase-image"><!--画像選択部分-->
+                                <div class="pencase-slide">
+                                    <div class="swiper-container slider2">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img loading="lazy" class="img2" src="pencase-1-3.webp" alt="Swiper01">
+                                                <img loading="lazy" class="img3" src="pencase-2-4.webp" alt="Swiper01">
+                                                <img loading="lazy" class="img4" src="pencase-3-2.webp" alt="Swiper01">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img loading="lazy" class="img2" src="pencase-1-1-1.webp" alt="Swiper02">
+                                                <img loading="lazy" class="img3" src="pencase-2-3.webp" alt="Swiper02">
+                                                <img loading="lazy" class="img4" src="pencase-3-1.webp" alt="Swiper02">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img loading="lazy" class="img2" src="pencase-1-1.webp" alt="Swiper03">
+                                                <img loading="lazy" class="img3" src="pencase-2-1.webp" alt="Swiper03">
+                                                <img loading="lazy" class="img4" src="pencase-2-1.webp" alt="Swiper03">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-black"></div>
+                                        <div class="swiper-button-prev swiper-button-black"></div>
+                                        <div class="swiper-button-next swiper-button-black"></div>
+                                    </div>
+                                </div>
+                                <div class="pencase-img-select">
+                                    <div class="select-1"><img loading="lazy" src="pencase-1-1-1-1.webp"><p>二本挿しペンケース<br>Romeo Oil Kip pencase</p></div>
+                                    <div class="select-2"><img loading="lazy" src="apa-roll.png"><p>ロールペンケース<br>Pent by KC's Robin Hood</p></div>
+                                    <div class="select-3"><img loading="lazy" src="apa-normal.webp"><p>ファスナーペンケース<br>SOMES ラウンドファスナー</p></div>
+                                </div>
+                            </div>
+                            <div class="pencase-paragraph"><!--画像説明部分-->
+                                <div class="pencase-1"><!--ロールペンケース--><!--同列の要素はpositin relative適用-->
+                                    <div class="pencase-1-shadow-1"></div>
+                                    <div class="pencase-1-shadow-2"></div>
+                                    <div class="pencase-1-shadow-3"></div>
+                                    
+                                    <div class="pencase-1-title">
+                                        <p class="roll-title-1">二本挿しペンケース</p>
+                                        <p class="roll-title-2">Romeo Oil-Kip Pencase</p>
+                                    </div>
+                                    <div class="pencase-1-main">
+                                        <p class="roll-title-0">特徴</p>
+                                        <p class="roll-main-1">
+                                            太軸万年筆が2本収容できるペンケース。<br>個々の袋に仕切られていることで筆記具同士の接触による傷が生じることがない。さらに、筆記具との接触部には非常に手触りのいいマイクロファイバーを用いている為、とてもいい状態で筆記具を収容することができる。<br>最低限な大きさしかないので、荷物としてかさばることがない。袋上部が開いている構造だが筆記具が落ちることはほとんどない。<br>日常生活で使うペンが決まっている人に最適な製品。
+                                        </p>
+                                        <p class="roll-main-2">価格</p>
+                                        <p class="roll-main-3">&yen;4,400</p>
+                                        <a class="roll-main-3-a" href="https://store.ito-ya.co.jp/item/45803426577291.html">購入サイトへ行く</a>
+                                    </div>
+                                </div>
+                                <div class="pencase-2"><!--ノーマルペンケース-->
+                                    <div class="pencase-2-shadow-1"></div>
+                                    <div class="pencase-2-shadow-2"></div>
+                                    <div class="pencase-2-shadow-3"></div>
+                                    <div class="pencase-2-title">
+                                        <p class="normal-title-1">ロールペンケース</p>
+                                        <p class="normal-title-2">Pent by KC's Rohbin-Hood</p>
+                                    </div>
+                                    <div class="pencase-2-main">
+                                        <p class="normal-title-0">特徴</p>
+                                        <p class="normal-main-1">
+                                            最大5本の太軸万年筆を収納できるペンケース。<br>柔らかさと強さをあわせ持ち、安定した質感とお手入れのしやすい素材であるステアハイドを外装に用い、個々に仕切られた収納部分は手触りの良い高級ピッグスキンを使用している。ロール状にまとめるのは先にホーンをイメージしてデザインされた革製の紐。この紐と本体を繋げるのにコンチョを使用している。使い込むほど手に馴染むとともに、深みを増した色に変化していく。<br>
+                                        </p>
+                                        <p class="normal-main-2">価格</p>
+                                        <p class="normal-main-3">&yen;11,200</p>
+                                        <a class="normal-main-3-a" href="https://store.ito-ya.co.jp/item/45803426577291.html">購入サイトへ行く</a>
+                                    </div>
+                                </div>
+                                <div class="pencase-3"><!--ロールペンケース--><!--同列の要素はpositin relative適用-->
+                                    <div class="pencase-3-shadow-1"></div>
+                                    <div class="pencase-3-shadow-2"></div>
+                                    <div class="pencase-3-shadow-3"></div>
+                                    <div class="pencase-3-title">
+                                        <p class="somes-title-1">4本用ペンケース</p>
+                                        <p class="somes-title-2">SOMESサドル　ラウンドファスナー</p>
+                                    </div>
+                                    <div class="pencase-3-main">
+                                        <p class="somes-title-0">特徴</p>
+                                        <p class="somes-main-1">
+                                            通常の万年筆が4本まで入るペンケース<br>仕切りをつけられていないので、収容する本数を減らせば太軸も収容可能になる。筆記具の収容部分にはペンをまとめるバンドがついているのでペンケース内で筆記具が暴れることはないので、胴軸に傷はつきにくい。筆記具収容部分と反対部分には小さいポケットがついているので、付箋や定規などを入れることができる。
+                                            <br>筆記具の他に持ち歩きたい物がある人に適している製品
+                                        </p>
+                                        <p class="somes-main-2">価格</p>
+                                        <p class="somes-main-3">&yen;8,500</p>
+                                        <p class="somes-main-3-a" href="https://store.ito-ya.co.jp/item/45803426577291.html">販売終了</p>
+                                    </div>
+                                </div>
+                            </div>
+                                <script src="swiper.js"></script>
+                                <script>
+                                    var slider2 = new Swiper('.slider2', {
+                                            navigation: {
+                                                 nextEl: '.swiper-button-next',
+                                                 prevEl: '.swiper-button-prev',
+                                            },
+                                            loop: true,
+                                            pagination:{
+                                                 el: '.swiper-pagination',
+                                                type: 'bullets',
+                                                clickable: true,
+                                            },
+                                            effect:'fade',
+                                        });
+                                        
+                                </script>
+                        </div>
+                        <div class="note">
+                            <a name="tonotebook"></a>
+                            <div class="note-top-title">
+                                <div class="note-top-11">
+                                    <div class="note-top-content">
+                                        <p><span class="span-11">The notebook </span><br><span class="span-44">and</span> <br><span class="span-22">writing instruments </span><br><span class="span-55">are </span><span class="span-33">&nbsp;I N S E P A R A B L E</span></p>
+                                    </div>
+                                    <div class="downscroll">
+                                        <p>Scroll Down</p>
+                                        <div class="down-pic">
+                                            <div class="swiper-button-prev swiper-button-white"></div>
+                                        </div>
+                                    </div>
+                                    <div class="show-position"></div>
+                                    <p class="note-title-1"><span class="title-11-span">Notebooks</span><img loading="lazy" class="and-left" src="and-left.png"></p>
+                                    <p class="note-title-2"><span class="title-22-span">Accessories</span><img loading="lazy" class="and-right" src="and-right.png"></p>
+                                </div>
+                            </div>
+                            <div class="note-top-main">
+                                <div class="note-top-main-title">
+                                    <p class="note-1">筆記行為の質、即ち"書き心地"を決める紙とノート</p>
+                                    <p class="note-2">
+                                        筆記行為には必ず"書く道具","書かれる物"の二つが必要になってきます。<br>
+                                        古代よりこの対になる物は書き心地を追求され時代と共に進化してきました。<br>
+                                        現代では書く道具とは筆記具、書かれる物とはノートや紙を指します。<br>
+                                        さらにノートや紙において、万年筆やボールペンのそれぞれに適した製品が存在しています。<br>
+                                        筆記具とそれに適した紙やノートを用意することで最高の書き心地を実現することができるのです。
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="note-main">
+                                <div class="note-main-faber">
+                                    <img loading="lazy" class="note-faber-logo" src="graf-von-faber-logo.png">
+                                    <img loading="lazy" class="note-faber-pic-1" src="1111-note-faber-14.webp">
+                                    <div class="note-faber-title">
+                                        <p class="note-faber-title-1">Linen Bound Notebooks<br><span>リネン綴じノート</span></p>
+                                        <p class="note-faber-title-2">このリネン綴じノートブックはバイエルン州にある製本会社xで作られています。<br>万年筆やボールペンなど、どのような筆記具でも滑らかな筆滑りを実現し、裏に透けにくい高品質な用紙を用いています。一枚一枚のシートに手の込んだ耐久性の高いスレッドステッチを施すことで、幾度のページ開閉にも耐えられるほどタフな製品に仕上がります。書きやすさとデザインを追求したこの製品はその値段に値する物だと、手にしてみれば感じることができるでしょう。
+                                        </p>
+                                    </div>
+                                    <div class="note-faber-main">
+                                        <img loading="lazy" class="note-faber-pic-2" src="1111-note-faber-16.webp">
+                                        <div class="note-faber-main-1">
+                                            <h3>色とサイズ</h3>
+                                            <p>
+                                                選択できる色が10以上と、とても多いので自分の筆記具に合わせた物や好きな色を選ぶことができます。個人的な考えですが、伯爵コレクションのブランドイメージからは想像できないようなパステルカラーも多く見られるので、高級筆記具だけではなく、色鉛筆などと一緒に持っていても違和感がないかな、と思います。<br>ノートサイズはA6,A5,A4の3種類あり、様々な用途に合わせてサイズを選ぶことが可能です。
+                                            </p>
+                                        </div>
+                                        <div class="note-faber-main-2">
+                                            <img loading="lazy" class="note-faber-pic-3" src="1111-note-faber-19.webp">
+                                            <div class="note-faber-main-2-1">
+                                                <h3>Linen Bound Notebooks Golden Brown &#215;<br>GRAF VON FABER-CASTELL CLASSIC PERNAMBUCO</h3>
+                                                <p>
+                                                    このノートに合わせたいのは同じく伯爵コレクションのクラシックシリーズ ペルナンブーコです。ゴールデンブラウンカラーのリネン綴じノートとプラチナの美しい輝きや、バイオリンにも使用される木材であるペルナンブーコを用いている同筆記具の相性は抜群です。この文章の真上の写真はこの2種類のコラボです。伯爵コレクション ギロシェシリーズは胴軸がパステルカラーで美しいものが多く存在するので、同じ色のリネン綴じノートと合わせて購入するのもいいかもしれません。
+                                                </p>
+                                            </div>
+                                            <div class="float-del"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="note-main-itoya">
+                                    <div class="color">
+                                         <p>ITOYA ROMEO <br>Double Ring Notebook</p>
+                                        <img loading="lazy" class="romeo-logo" src="1111-note-itoya-logo.png">
+                                        <img loading="lazy" class="itoya-logo" src="1111-note-itoya-logo-2.png">
+                                    </div>
+                                    <div class="under-color">
+                                        <a href="#">&gt; SHOP THIS PRODUCT &lt;</a>
+                                    </div>
+                                    <div class="itoya-0">
+                                    </div>
+                                    <div class="itoya-0-1">
+                                        <style>
+                                        @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,200&display=swap');
+                                        </style>
+                                        <p class="itoya-0-1-1">
+                                            <span>ROMEO</span>  :  The heritage of the original fountain pen, launched in 1914, <br>was revived as a new brand of writing instruments and peripheral items in 2009.
+                                        </p>
+                                    </div>
+                                    <div class="itoya-0-2">
+                                        <p>Product-Features<p>
+                                    </div>
+                                    <div class="itoya-1">
+                                        <div class="itoya-1-1">
+                                            <div class="itoya-1-1-1">
+                                                <img loading="lazy" src="romeo-1.png">
+                                            </div>
+                                        </div>
+                                        <div class="itoya-1-2">
+                                            <div class="itoya-1-2-1">
+                                                <img loading="lazy" src="romeo-2.png">
+                                            </div>
+                                        </div>
+                                        <div class="itoya-1-3">
+                                            <div class="itoya-1-3-1">
+                                                <img loading="lazy" src="romeo-3.png">
+                                            </div>
+                                        </div>
+                                        <div class="itoya-1-4">
+                                            <div class="itoya-1-4-1">
+                                                <img loading="lazy" src="romeo-4.png">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="itoya-2">
+                                        <div class="itoya-point"></div>
+                                        <div class="itoya-2-1">
+                                            <div class="itoya-2-1-1">DEIGN</div>
+                                            <p>伊東屋のオリジナルブランドROMEOが展開しているノートシリーズ。表紙には金色のブランドロゴや万年筆をイメージしたイラストが。黒色のハード系表紙にゴールドを組み合わせることで重厚感を生み出しています。</p>
+                                        </div>
+                                        <div class="itoya-2-2">
+                                            <div class="itoya-2-2-1">DOUBLE RING</div>
+                                            <p>真鍮のような輝きを見せるダブルリングは高級感を醸し出す要素として存在感を発揮しています。ノートを開くときにページ同士の干渉が無いように設計されたリングがストレスフリーなノート利用を実現しています。</p>
+                                        </div>
+                                        <div class="itoya-2-3">
+                                            <div class="itoya-2-3-1">Compatibility with ROMEO-PEN</div>
+                                            <p>同じくROMEOブランドの製品を合わせて使うのもいいでしょう。ROMEO No.3 というボールペンを写真では合わせています。真鍮の軸を持つボールペンとこのノートの相性は最高であると誰もが思うでしょう。</p>
+                                        </div>
+                                        <div class="itoya-2-4">
+                                            <div class="itoya-2-4-1">Bussiness</div>
+                                            <p>A5, A4, B5, B4 のサイズ展開があるので、学校のノートとしてだけでなく、ビジネスバックに入れることもできます。また、ノートは無地, 罫線, ドット罫, 方眼 の4種類があるので様々な用途にあったものを選択できます。</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section-2-sp"><!--spだけ-->
+                        <a name="accessory-section-top-sp"></a>
+                        <a name="section2"></a>
+                        <div class="moveing-part"><!--開閉部分-->
+							<script>
+								$(function(){
+									$("body").each(function(){
+										var height = $(window).height();
+										$(".open-close-sp").height(height);
+										$(".moveing-part").height(height);
+									})
+								});
+								
+							</script>
+                            <div class="open-close-sp">
+                                <p class="moving-text">
+                                    High-Quality Accessory <br>and<br> Writing-instrument are <br>I N S E P A R A B L E
+                                </p>
+                                <div class="open-close-sp-1">
+                                    <p>PEN HOLDER</p>
+                                    <img loading="lazy" src="and-left.png">
+                                </div>
+                                <div class="open-close-sp-2">
+                                    <p>NOTE BOOK</p>
+                                    <img loading="lazy" src="and-right.png">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section-2-pencase-sp-over">
+                            <a name="pencase-sp"></a>
+                            <div class="section-2-choice-sp"><!--種類の選択-->
+                                <div class="select-1-sp"><img loading="lazy" src="apa-2-pencase-sp.webp"><p>二本挿しペンケース</p></div>
+                                <div class="select-2-sp"><img loading="lazy" src="apa-roll-pencase-sp.webp"><p>ロールペンケース</p></div>
+                                <div class="select-3-sp"><img loading="lazy" src="apa-4-pencase-sp.webp"><p>ファスナーペンケース</p></div>
+                            </div>
+                            <div class="section-2-pencase-sp"><!--pencaseセクション-->
+                                <div class="pencase-slider-title-sp">
+                                    <div class="pencase-slider-title-3-sp">Romeo Oil-Kip Pencase<br><p><span>二本挿しペンケース</span></p></div>
+                                    <div class="pencase-slider-title-4-sp">Pent by KC's Rohbin-Hood<br><p><span>ロールペンケース</span></p></div>
+                                    <div class="pencase-slider-title-5-sp">SOMES SADDLE round fastener<br><p><span>4本用ペンケース</span></p></div>
+                                </div>
+                                <div class="pencase-slider-sp">
+                                    <div class="swiper-container slider3">
+                                        <div class="swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <img loading="lazy" class="img3-sp" src="2-penholder.webp" alt="Swiper01">
+                                                <img loading="lazy" class="img4-sp" src="roll-penholder.webp" alt="Swiper01">
+                                                <img loading="lazy" class="img5-sp" src="4-penholder.webp" alt="Swiper01">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img loading="lazy" class="img3-sp" src="pencase-1-1.webp" alt="Swiper02">
+                                                <img loading="lazy" class="img4-sp" src="pencase-2-4.webp" alt="Swiper02">
+                                                <img loading="lazy" class="img5-sp" src="pencase-3-1.webp" alt="Swiper02">
+                                            </div>
+                                            <div class="swiper-slide">
+                                                <img loading="lazy" class="img3-sp" src="pencase-1-1-1.webp" alt="Swiper03">
+                                                <img loading="lazy" class="img4-sp" src="pencase-2-1.webp" alt="Swiper03">
+                                                <img loading="lazy" class="img5-sp" src="pencase-3-2.webp" alt="Swiper03">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-pagination swiper-pagination-lightgray"></div>
+                                        <div class="swiper-button-prev swiper-button-lightgray"></div>
+                                        <div class="swiper-button-next swiper-button-lightgray"></div>
+                                    </div>
+                                </div>
+                                <div class="pencase-slider-text-sp">
+                                    <div class="pencase-slider-text-3">
+                                        <p class="product-name-sp">Romeo Oil-Kip Pencase</p>
+                                        <p class="pencase-price-sp">&#165; 4,400 ( 税込 )</p>
+                                        <a href="#"><div class="purchace-sp">商品を購入する</div></a>
+                                        <div class="product-detail-sp">
+                                            <div class="detail-title-sp">Product Details<p>&#43;<span>&#8722;</span></p></div>
+                                            <p class="size-information-sp">サイズ：W80×H153mm<br>質量：約62g<br>材質：牛革（オイルキップ）、人工皮革<br>収納可能本数:2本</p>
+                                        </div>
+                                        <div class="product-informaition-sp">
+                                            <div class="under-text-open-close-sp">Product Information<p>&#43;<span>&#8722;</span></p></div>
+                                            <p class="information-main-sp">太軸万年筆が2本収容できるペンケース。個々の袋に仕切られていることで筆記具同士の接触による傷が生じることがない。さらに、筆記具との接触部には非常に手触りのいいマイクロファイバーを用いている為、とてもいい状態で筆記具を収容することができる。最低限な大きさしかないので、荷物としてかさばることがない。袋上部が開いている構造だが筆記具が落ちることはほとんどない。<br>日常生活で使うペンが決まっている人に最適な製品。</p>
+                                        </div>
+                                    </div>
+                                    <div class="pencase-slider-text-4">
+                                        <p class="product-name-sp">Pent by KC's Robin Hood</p>
+                                        <p class="pencase-price-sp">&#165; 11,200 ( 税込 )</p>
+                                        <a href="#"><div class="purchace-sp">商品を購入する</div></a>
+                                        <div class="product-detail-sp">
+                                            <div class="detail-title-sp">Product Details<p>&#43;<span>&#8722;</span></p></div>
+                                            <p class="size-information-sp">サイズ(開いた状態)：W210mm×H190mm<br>サイズ(丸めた状態)：W50mm×H190mm<br>質量：約86g<br>紐の長さ:540mm<br>材質(表側)：U.S.オイルド ステアハイド（オス牛革)<br>材質(裏側)：高級ピッグスキン<br>収納可能本数:5本</p>
+                                        </div>
+                                        <div class="product-informaition-sp">
+                                            <div class="under-text-open-close-sp">Product Information<p>&#43;<span>&#8722;</span></p></div>
+                                            <p class="information-main-sp">最大5本の太軸万年筆を収納できるペンケース。柔らかさと強さをあわせ持ち、安定した質感とお手入れのしやすい素材であるステアハイドを外装に用い、個々に仕切られた収納部分は手触りの良い高級ピッグスキンを使用している。ロール状にまとめるのは先にホーンをイメージしてデザインされた革製の紐。この紐と本体を繋げるのにコンチョを使用している。使い込むほど手に馴染むとともに、深みを増した色に変化していく。</p>
+                                        </div>
+                                    </div>
+                                    <div class="pencase-slider-text-5">
+                                        <p class="product-name-sp">SOMES SADDLE round fastener</p>
+                                        <p class="pencase-price-sp">&#165; -- ( 税込 )</p>
+                                        <a><div class="purchace-sp">販売終了</div></a>
+                                        <div class="product-detail-sp">
+                                            <div class="detail-title-sp">Product Details<p>&#43;<span>&#8722;</span></p></div>
+                                            <p class="size-information-sp">サイズ：W100×H203mm<br>質量：約122g<br>材質：牛革、人工皮革</p>
+                                        </div>
+                                        <div class="product-informaition-sp">
+                                            <div class="under-text-open-close-sp">Product Information<p>&#43;<span>&#8722;</span></p></div>
+                                            <p class="information-main-sp">通常の万年筆が4本まで入るペンケース仕切りをつけられていないので、収容する本数を減らせば太軸も収容可能になる。筆記具の収容部分にはペンをまとめるバンドがついているのでペンケース内で筆記具が暴れることはないので、胴軸に傷はつきにくい。筆記具収容部分と反対部分には小さいポケットがついているので、付箋や定規などを入れることができる。<br>筆記具の他に定規など持ち歩きたい物がある人に適している製品</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <script>
+                                    var slider3 = new Swiper('.slider3', {
+                                        navigation: {
+                                            nextEl: '.swiper-button-next',
+                                            prevEl: '.swiper-button-prev',
+                                        },
+                                        loop: true,
+                                        pagination:{
+                                            el: '.swiper-pagination',
+                                            type: 'bullets',
+                                            clickable: true,
+                                        },
+                                        effect:'fade',
+                                        autoplay: {
+                                            delay: 5000,
+                                            disableOnInteraction: false,
+                                            speed:8000,
+                                        },
+                                    });
+                                </script>
+                            </div>
+                        </div>
+                        <div class="section-2-notebook-sp"><!--notebookセクション-->
+                            <a name="note-sp"></a>
+                            <div class="notebook-title-sp">
+                                <div class="note-book-title-main-sp">
+                                    <p class="notebook-title-1-sp">筆記行為の大切な要素</p>
+                                    <p class="notebook-title-2-sp">Notebooks</p>
+                                    <p class="notebook-title-3-sp">筆記行為に必要なものは"書くもの","書かれるもの"の両方です。現代では前者に筆記具、後者にノートや紙を指します。古代よりこの対になるものは"書き心地"を追求して時代とともに進化してきました。</p>
+                                </div>
+                            </div>
+                            <!--div class="note-top-main-title-sp">
+                                    <p class="note-1-sp">筆記行為の質、即ち"書き心地"を決める紙とノート</p>
+                                    <p class="note-2-sp">
+                                        筆記行為には必ず"書く道具","書かれる物"の二つが必要になってきます。<br>
+                                        古代よりこの対になる物は書き心地を追求され時代と共に進化してきました。<br>
+                                        現代では書く道具とは筆記具、書かれる物とはノートや紙を指します。<br>
+                                        さらにノートや紙において、万年筆やボールペンのそれぞれに適した製品が存在しています。<br>
+                                        筆記具とそれに適した紙やノートを用意することで最高の書き心地を実現することができるのです。
+                                    </p>                            
+                                </div>-->
+                            <!--<div class="notebook-faber-sp">
+                                <img loading="lazy" class="fab-note-sp-1" src="fab-note-sp-1.jpg">
+                            </div>
+                            <div class="notebook-romeo-sp">
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <!--introduction-->
+                <div class="footer"><!--pcだけ-->
+                    <img loading="lazy" class="footer-logo" src="birome-staitonery.png">
+                    <div class="footer-choice">
+                        <div class="footer-choice-1">
+                            <p></p>
+                            <ul>
+                                <li><a href="#" class="foot-1">TOP PAGE</a></li>
+                                <li><a href="#" class="foot-1">ROAD BIKE</a></li>
+                                <li><a href="#" class="foot-1">WATCH</a></li>
+                                <li><a href="#" class="foot-1">INTERIOR</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-choice-2">
+                            <p></p>
+                            <ul class="li2-1">
+                                <p>Section1</p>
+                                <li><a href="#tofabercastell" class="foot-2">GRAF VON FABERCASTELL</a></li>
+                                <li><a href="#tocarandache" class="foot-2">CARAN dACHE</a></li>
+                                <li><a href="#topelikan" class="foot-2">PELIKAN</a></li>
+                                <li><a href="#towatermanuni" class="foot-2">WATERMAN &amp; UNI</a></li>
+                            </ul>
+                            <ul class="li2-2">
+                                <p>Section2</p>
+                                <li><a href="#topencase" class="foot-2">PEN CASE</a></li>
+                                <li><a href="#tonotebook" class="foot-2">NOTEBOOK</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-sp"><!--spだけ-->
+                    <div class="footer-left-sp">
+                        <ul class="footer-choice-1-sp">
+                            <p>PEN</p>
+                            <li><a href="#pen-section-sp">SECTION TOP</a></li>
+                            <li><a href="#caran-sp">CARANDACHE</a></li>
+                            <li><a href="#faber-sp">FABERCASTELL</a></li>
+                            <li><a href="#pelikan-sp">PELIKAN</a></li>
+                            <li><a href="#water-uni-sp">WATERAN</a></li>
+                            <li><a href="#water-uni-sp">UNI</a></li>
+                            <p class="p1-sp">ACCESSORY</p>
+                            <li><a href="#accessory-section-top-sp">SECTION TOP</a></li>
+                            <li><a href="#pencase-sp">PEN HOLDER</a></li>
+                            <li><a href="#note-sp">NOTEBOOK</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-right-sp">
+                        <ul class="footer-choice-1-sp footer-choice-2-sp">
+                            <p>関連ページ</p>
+                            <li><a href="#">トップページ</a></li>
+                            <li><a href="#">ロードバイク</a></li>
+                            <li><a style="color:rgba(220,220,220);">筆記具</a></li>
+                            <li><a href="#">インテリア</a></li>
+                            <p class="p2-sp">編集者紹介</p>
+                            <li><a href="#">初心者のWEB開発</a></li>
+                        </ul>
+                        <h3>編集期間 2020/05/12 ~ 2020/8/20　</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
